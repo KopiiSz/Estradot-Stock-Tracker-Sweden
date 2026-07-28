@@ -176,7 +176,7 @@ def collect_pharmacies(session):
     return all_pharmacies
 
 
-ddef is_in_stock(entry):
+def is_in_stock(entry):
        return entry.get("stockInformation") is True
 
 
