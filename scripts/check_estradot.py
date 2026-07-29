@@ -177,7 +177,8 @@ def collect_pharmacies(session):
 
 
 def is_in_stock(entry):
-       return entry.get("stockInformation") is True
+       info = entry.get("stockInformation", "UNKNOWN")
+       return info not in ("NOT_IN_STOCK_SHORTAGE_INFO", "NO_SERVICE", "UNKNOWN") and info is not False
 
 
 def run_all_checks(session, gln_list):
