@@ -2,10 +2,13 @@ name: Check Estradot stock
 
 on:
   schedule:
-    # Runs at :07 and :37 past every hour (offset from the exact hour, since
-    # GitHub's scheduler tends to be congested right at :00 and :30).
-    - cron: "7,37 * * * *"
-  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
+    # Runs every hour; the "check_time" step below only lets the real work
+    # through at the 10 chosen Europe/Stockholm local hours (06:00 through
+    # 00:00, every 2 hours) -- doing it this way (rather than a fixed UTC
+    # cron) means it stays correct across the March/October DST switches
+    # with no manual adjustment needed.
+    - cron: "13 * * * *"
+  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab (always runs, bypassing the time gate)
 
 permissions:
   contents: write   # needed so the workflow can commit updated results back
@@ -18,21 +21,47 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      - name: Check if this is one of the scheduled hours (Europe/Stockholm time)
+        id: check_time
+        run: |
+          HOUR=$(TZ="Europe/Stockholm" date +%H)
+          echo "Current Stockholm local hour: $HOUR"
+          RUN_HOURS=" 06 08 10 12 14 16 18 20 22 00 "
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "Manually triggered -- running regardless of hour."
+          elif [[ "$RUN_HOURS" == *" $HOUR "* ]]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            echo "Not a scheduled hour -- skipping this run."
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.check_time.outputs.should_run == 'true'
 
       - uses: actions/setup-python@v5
+        if: steps.check_time.outputs.should_run == 'true'
         with:
           python-version: "3.11"
 
       - name: Install dependencies
+        if: steps.check_time.outputs.should_run == 'true'
         run: pip install requests
 
       - name: Run stock check
+        if: steps.check_time.outputs.should_run == 'true'
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          NOTIFY_STRENGTHS: ${{ secrets.NOTIFY_STRENGTHS }}
+          NOTIFY_REGIONS: ${{ secrets.NOTIFY_REGIONS }}
         run: python scripts/check_estradot.py
 
       - name: Commit and push results if changed
+        if: steps.check_time.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
