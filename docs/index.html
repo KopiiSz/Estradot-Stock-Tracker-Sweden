@@ -17,6 +17,7 @@
     line-height: 1.5;
   }
   h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.2rem; margin-top: 36px; }
   .subtitle { color: var(--muted); margin-top: 0; font-size: 0.95rem; }
   .stats { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0; }
   .stat {
@@ -33,123 +34,272 @@
     border-radius: 6px; padding: 2px 8px; font-size: 0.75rem; margin-right: 4px;
   }
   .none { color: var(--muted); padding: 20px 0; }
-  .history { color: var(--muted); font-size: 0.85rem; padding-left: 18px; }
   footer { margin-top: 40px; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); padding-top: 16px; }
   a { color: var(--accent); }
+
+  .notif-panel {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
+    padding: 20px; margin-top: 12px;
+  }
+  .notif-panel input[type="text"] {
+    display: block; width: 100%; margin: 6px 0 18px; padding: 10px 12px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+    color: var(--text); font-size: 0.9rem;
+  }
+  .secret-label { font-size: 0.85rem; color: var(--muted); }
+  fieldset { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 16px; padding: 12px 14px; }
+  legend { color: var(--muted); font-size: 0.8rem; text-transform: uppercase; padding: 0 6px; }
+  .cb-grid { display: flex; flex-wrap: wrap; gap: 10px 18px; }
+  .region-grid { margin-top: 10px; }
+  .cb-grid label { font-size: 0.9rem; white-space: nowrap; }
+  button#generateBtn {
+    background: var(--accent); color: #06210f; border: none; border-radius: 8px;
+    padding: 10px 18px; font-size: 0.9rem; font-weight: 600; cursor: pointer;
+  }
+  .topic-list { padding-left: 0; list-style: none; margin-top: 12px; }
+  .topic-list li {
+    background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 12px; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .topic-list code { font-size: 0.85rem; }
+  .copyBtn {
+    background: transparent; border: 1px solid var(--border); color: var(--text);
+    border-radius: 6px; padding: 4px 10px; font-size: 0.8rem; cursor: pointer;
+  }
+  .warn { color: #f4a261; }
 </style>
 </head>
 <body>
   <h1>Estradot® stock tracker — Sweden</h1>
-  <p class="subtitle">Last checked: 2026-07-29 16:33 UTC · Data via Fass.se / Sveriges Apoteksförening</p>
+  <p class="subtitle">Last checked: 2026-07-29 17:08 UTC · Data via Fass.se / Sveriges Apoteksförening</p>
 
   <div class="stats"><div class="stat"><div class="stat-num">0</div><div class="stat-label">25 mcg</div></div><div class="stat"><div class="stat-num">0</div><div class="stat-label">37.5 mcg</div></div><div class="stat"><div class="stat-num">0</div><div class="stat-label">50 mcg</div></div><div class="stat"><div class="stat-num">0</div><div class="stat-label">75 mcg</div></div><div class="stat"><div class="stat-num">17</div><div class="stat-label">100 mcg</div></div></div>
 
   <h2>Currently in stock</h2>
-  <table><thead><tr><th>Pharmacy</th><th>Address</th><th>Phone</th><th>In stock</th></tr></thead><tbody>
-        <tr>
-          <td>Apoteket Visenten EA</td>
-          <td>Lasarettet, Avesta (77441)</td>
-          <td>0771450450</td>
-          <td><span class="badge">100 mcg</span></td>
-        </tr>
+  <table><thead><tr><th>Pharmacy</th><th>Address</th><th>Region</th><th>Phone</th><th>In stock</th></tr></thead><tbody>
         <tr>
           <td>Apoteket Kupolen</td>
           <td>Kupolen 5, Borlänge (78170)</td>
+          <td>Dalarna</td>
           <td>0771450450</td>
           <td><span class="badge">100 mcg</span></td>
         </tr>
         <tr>
           <td>Kronans Apotek Gävle Bomhus</td>
           <td>Solgårdsgatan 2, Gävle (80430)</td>
+          <td>Gävleborg</td>
           <td>0771-612612</td>
-          <td><span class="badge">100 mcg</span></td>
-        </tr>
-        <tr>
-          <td>Kronans Apotek Carlanderska Sjukhuset</td>
-          <td>Carlandersparken 1, Göteborg (41255)</td>
-          <td>031-7979679</td>
-          <td><span class="badge">100 mcg</span></td>
-        </tr>
-        <tr>
-          <td>Kronans Apotek Elisedal</td>
-          <td>Ebbe Lieberathsgatan 8, Göteborg (41265)</td>
-          <td>031-7120021</td>
-          <td><span class="badge">100 mcg</span></td>
-        </tr>
-        <tr>
-          <td>Kronans Apotek Gbg Johanneberg</td>
-          <td>Eklandagatan 80, Göteborg (41281)</td>
-          <td>031-207990</td>
           <td><span class="badge">100 mcg</span></td>
         </tr>
         <tr>
           <td>Apoteket Björken</td>
           <td>Telegatan 8C, Hoting (83351)</td>
+          <td>Jämtland</td>
           <td>0771450450</td>
           <td><span class="badge">100 mcg</span></td>
         </tr>
         <tr>
-          <td>Kronans Apotek Landskrona</td>
-          <td>Österleden 165, Landskrona (26151)</td>
-          <td>0771-612 612</td>
-          <td><span class="badge">100 mcg</span></td>
-        </tr>
-        <tr>
-          <td>Apoteket Örnen</td>
-          <td>Storgatan 71, Lessebo (36532)</td>
+          <td>Apoteket Ugglan</td>
+          <td>Centraltorget 3, Ånge (84133)</td>
+          <td>Jämtland</td>
           <td>0771450450</td>
           <td><span class="badge">100 mcg</span></td>
         </tr>
         <tr>
           <td>Apoteket Lönnen</td>
           <td>Torget 1, Nybro (38230)</td>
-          <td>0771450450</td>
-          <td><span class="badge">100 mcg</span></td>
-        </tr>
-        <tr>
-          <td>Apoteket Storgatan</td>
-          <td>Östra Storgatan 34, Olofström (29334)</td>
+          <td>Kalmar</td>
           <td>0771450450</td>
           <td><span class="badge">100 mcg</span></td>
         </tr>
         <tr>
           <td>Apoteket Lejonet</td>
           <td>Stora Torget 3, Oskarshamn (57242)</td>
+          <td>Kalmar</td>
           <td>0771450450</td>
+          <td><span class="badge">100 mcg</span></td>
+        </tr>
+        <tr>
+          <td>Apoteket Örnen</td>
+          <td>Storgatan 71, Lessebo (36532)</td>
+          <td>Kronoberg</td>
+          <td>0771450450</td>
+          <td><span class="badge">100 mcg</span></td>
+        </tr>
+        <tr>
+          <td>Apoteket Storgatan</td>
+          <td>Östra Storgatan 34, Olofström (29334)</td>
+          <td>Kronoberg</td>
+          <td>0771450450</td>
+          <td><span class="badge">100 mcg</span></td>
+        </tr>
+        <tr>
+          <td>Kronans Apotek Landskrona</td>
+          <td>Österleden 165, Landskrona (26151)</td>
+          <td>Skåne</td>
+          <td>0771-612 612</td>
           <td><span class="badge">100 mcg</span></td>
         </tr>
         <tr>
           <td>Apoteket Foxen</td>
           <td>Töcksfors Shoppingcenter, Töcksfors (67241)</td>
+          <td>Värmland</td>
           <td>0771450450</td>
           <td><span class="badge">100 mcg</span></td>
         </tr>
         <tr>
           <td>Apoteket Tallen</td>
           <td>Norra Allégatan 30, Vansbro (78631)</td>
+          <td>Värmland</td>
           <td>0771450450</td>
-          <td><span class="badge">100 mcg</span></td>
-        </tr>
-        <tr>
-          <td>Kronans Apotek Ytterby</td>
-          <td>Stationsgatan 7, Ytterby (44250)</td>
-          <td>0771-612612</td>
           <td><span class="badge">100 mcg</span></td>
         </tr>
         <tr>
           <td>Åmål Mellanbrogatan 3</td>
           <td>Mellanbrogatan 3, Åmål (66231)</td>
+          <td>Värmland</td>
           <td>0771405405</td>
           <td><span class="badge">100 mcg</span></td>
         </tr>
         <tr>
-          <td>Apoteket Ugglan</td>
-          <td>Centraltorget 3, Ånge (84133)</td>
+          <td>Apoteket Visenten EA</td>
+          <td>Lasarettet, Avesta (77441)</td>
+          <td>Västmanland</td>
           <td>0771450450</td>
+          <td><span class="badge">100 mcg</span></td>
+        </tr>
+        <tr>
+          <td>Kronans Apotek Carlanderska Sjukhuset</td>
+          <td>Carlandersparken 1, Göteborg (41255)</td>
+          <td>Västra Götaland</td>
+          <td>031-7979679</td>
+          <td><span class="badge">100 mcg</span></td>
+        </tr>
+        <tr>
+          <td>Kronans Apotek Elisedal</td>
+          <td>Ebbe Lieberathsgatan 8, Göteborg (41265)</td>
+          <td>Västra Götaland</td>
+          <td>031-7120021</td>
+          <td><span class="badge">100 mcg</span></td>
+        </tr>
+        <tr>
+          <td>Kronans Apotek Gbg Johanneberg</td>
+          <td>Eklandagatan 80, Göteborg (41281)</td>
+          <td>Västra Götaland</td>
+          <td>031-207990</td>
+          <td><span class="badge">100 mcg</span></td>
+        </tr>
+        <tr>
+          <td>Kronans Apotek Ytterby</td>
+          <td>Stationsgatan 7, Ytterby (44250)</td>
+          <td>Västra Götaland</td>
+          <td>0771-612612</td>
           <td><span class="badge">100 mcg</span></td>
         </tr></tbody></table>
 
-  <h2>Recent new-stock events</h2><ul class='history'><li>2026-07-29 15:55: 100 mcg at Apotek Hjärtat ICA Kvantum Strömstad (Strömstad)</li><li>2026-07-29 15:55: 100 mcg at Strömstad Nordby Köpcenter (Strömstad)</li><li>2026-07-29 15:55: 100 mcg at Apoteket Foxen (Töcksfors)</li><li>2026-07-29 15:55: 100 mcg at Ed Magasinsgatan 10 (Ed)</li><li>2026-07-29 15:55: 100 mcg at Trelleborg ICA Maxi (Trelleborg)</li><li>2026-07-29 15:55: 100 mcg at Trelleborg Lasarettet (Trelleborg)</li><li>2026-07-29 15:55: 100 mcg at Apotek Hjärtat ICA Kvantum Svedala (Svedala)</li><li>2026-07-29 15:55: 100 mcg at Ystad ICA Kvantum (Ystad)</li><li>2026-07-29 15:55: 100 mcg at Edsbyn Sporthallsvägen 2 (Edsbyn)</li><li>2026-07-29 15:55: 100 mcg at Trosa, ICA Kvantum (Trosa)</li><li>2026-07-29 15:55: 100 mcg at Nyköping Pål Jungs Hage (Nyköping)</li><li>2026-07-29 15:55: 100 mcg at Nyköping ICA Maxi (Nyköping)</li><li>2026-07-29 15:55: 100 mcg at Nyköpings lasarett (Nyköping)</li><li>2026-07-29 15:55: 100 mcg at Vimmerby Norrtullsgatan 5 (Vimmerby)</li><li>2026-07-29 15:55: 100 mcg at Nynäshamn ICA Maxi (Nynäshamn)</li><li>2026-07-29 15:55: 100 mcg at Nynäshamn (Nynäshamn)</li><li>2026-07-29 15:55: 100 mcg at Gamleby Centrum (Gamleby)</li><li>2026-07-29 15:55: 100 mcg at Apotek Hjärtat ICA Maxi Västervik (Västervik)</li><li>2026-07-29 15:55: 100 mcg at Apotek Hjärtat ICA Maxi Visby (Visby)</li><li>2026-07-29 15:55: 100 mcg at Apotek Hjärtat ICA Maxi Kungsbacka (Kungsbacka)</li><li>2026-07-29 15:55: 100 mcg at Kungsbacka Kungsmässan (Kungsbacka)</li><li>2026-07-29 15:55: 100 mcg at Kronans Apotek Ytterby (Ytterby)</li><li>2026-07-29 15:55: 100 mcg at Luleå Björkskatans vårdcentral (Luleå)</li><li>2026-07-29 15:55: 100 mcg at Apotek Hjärtat ICA Kvantum Luleå (Luleå)</li><li>2026-07-29 15:55: 100 mcg at Luleå Skurholmen (Luleå)</li><li>2026-07-29 15:55: 100 mcg at Luleå ICA Maxi (Luleå)</li><li>2026-07-29 15:55: 100 mcg at Älvsbyn Storgatan 27 (Älvsbyn)</li><li>2026-07-29 15:55: 100 mcg at Öjebyn Vårdcentralen (Öjebyn)</li><li>2026-07-29 15:55: 100 mcg at Tomelilla Centralgatan 2 (Tomelilla)</li><li>2026-07-29 15:55: 100 mcg at Simrishamns sjukhus (Simrishamn)</li></ul>
+  
+  <h2>Get notified</h2>
+  <p class="subtitle">
+    Pick a strength and an area below, and this shows you the exact
+    <a href="https://ntfy.sh" target="_blank" rel="noopener">ntfy</a> topic
+    name(s) to subscribe to for just that combination -- no account or
+    sign-up on this site, your picks are only remembered in this browser.
+  </p>
+  <div class="notif-panel">
+    <label class="secret-label" for="baseSecret">Your personal code (any long random string -- keep it private, it's what makes these topics yours alone):</label>
+    <input id="baseSecret" type="text" placeholder="e.g. river-lamp-92-owl" autocomplete="off">
+
+    <fieldset>
+      <legend>Strength</legend>
+      <div class="cb-grid"><label><input type="checkbox" class="strengthCb" value="25"> 25 mcg</label><label><input type="checkbox" class="strengthCb" value="37.5"> 37.5 mcg</label><label><input type="checkbox" class="strengthCb" value="50"> 50 mcg</label><label><input type="checkbox" class="strengthCb" value="75"> 75 mcg</label><label><input type="checkbox" class="strengthCb" value="100"> 100 mcg</label></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Area</legend>
+      <div class="cb-grid">
+        <label><input type="checkbox" id="allSwedenCb"> <strong>All of Sweden</strong></label>
+      </div>
+      <div class="cb-grid region-grid"><label><input type="checkbox" class="regionCb" value="stockholm"> Stockholm</label><label><input type="checkbox" class="regionCb" value="uppsala"> Uppsala</label><label><input type="checkbox" class="regionCb" value="sodermanland"> Södermanland</label><label><input type="checkbox" class="regionCb" value="ostergotland"> Östergötland</label><label><input type="checkbox" class="regionCb" value="jonkoping"> Jönköping</label><label><input type="checkbox" class="regionCb" value="kronoberg"> Kronoberg</label><label><input type="checkbox" class="regionCb" value="kalmar"> Kalmar</label><label><input type="checkbox" class="regionCb" value="gotland"> Gotland</label><label><input type="checkbox" class="regionCb" value="blekinge"> Blekinge</label><label><input type="checkbox" class="regionCb" value="skane"> Skåne</label><label><input type="checkbox" class="regionCb" value="halland"> Halland</label><label><input type="checkbox" class="regionCb" value="vastra-gotaland"> Västra Götaland</label><label><input type="checkbox" class="regionCb" value="varmland"> Värmland</label><label><input type="checkbox" class="regionCb" value="orebro"> Örebro</label><label><input type="checkbox" class="regionCb" value="vastmanland"> Västmanland</label><label><input type="checkbox" class="regionCb" value="dalarna"> Dalarna</label><label><input type="checkbox" class="regionCb" value="gavleborg"> Gävleborg</label><label><input type="checkbox" class="regionCb" value="vasternorrland"> Västernorrland</label><label><input type="checkbox" class="regionCb" value="jamtland"> Jämtland</label><label><input type="checkbox" class="regionCb" value="vasterbotten"> Västerbotten</label><label><input type="checkbox" class="regionCb" value="norrbotten"> Norrbotten</label></div>
+    </fieldset>
+
+    <button id="generateBtn">Show my topics</button>
+    <div id="topicResults"></div>
+  </div>
+
+  <script>
+    (function() {
+      var STORAGE_KEY = "estradot_notif_prefs_v1";
+
+      function saved() {
+        try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+        catch (e) { return {}; }
+      }
+      function save(prefs) {
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs)); }
+        catch (e) {}
+      }
+
+      var prefs = saved();
+      var secretEl = document.getElementById("baseSecret");
+      if (prefs.secret) secretEl.value = prefs.secret;
+
+      document.querySelectorAll(".strengthCb").forEach(function(cb) {
+        if (prefs.strengths && prefs.strengths.indexOf(cb.value) !== -1) cb.checked = true;
+      });
+      document.querySelectorAll(".regionCb").forEach(function(cb) {
+        if (prefs.regions && prefs.regions.indexOf(cb.value) !== -1) cb.checked = true;
+      });
+      var allSwedenEl = document.getElementById("allSwedenCb");
+      if (prefs.allSweden) allSwedenEl.checked = true;
+
+      document.getElementById("generateBtn").addEventListener("click", function() {
+        var secret = secretEl.value.trim();
+        var resultsEl = document.getElementById("topicResults");
+        resultsEl.innerHTML = "";
+
+        if (!secret) {
+          resultsEl.innerHTML = '<p class="warn">Enter a personal code first.</p>';
+          return;
+        }
+
+        var strengths = Array.prototype.slice.call(document.querySelectorAll(".strengthCb:checked")).map(function(cb) { return cb.value; });
+        var regions = Array.prototype.slice.call(document.querySelectorAll(".regionCb:checked")).map(function(cb) { return cb.value; });
+        var allSweden = allSwedenEl.checked;
+
+        save({ secret: secret, strengths: strengths, regions: regions, allSweden: allSweden });
+
+        if (strengths.length === 0 || (!allSweden && regions.length === 0)) {
+          resultsEl.innerHTML = '<p class="warn">Pick at least one strength and at least one area (or "All of Sweden").</p>';
+          return;
+        }
+
+        var topics = [];
+        strengths.forEach(function(s) {
+          if (allSweden) topics.push(secret + "-" + s + "mcg-all");
+          regions.forEach(function(r) { topics.push(secret + "-" + s + "mcg-" + r); });
+        });
+
+        var html = '<p>Subscribe to ' + (topics.length === 1 ? "this topic" : "these topics") + ' in the ntfy app (or tap to open in browser):</p><ul class="topic-list">';
+        topics.forEach(function(t) {
+          html += '<li><code>' + t + '</code> ' +
+                  '<a href="https://ntfy.sh/' + t + '" target="_blank" rel="noopener">open</a> ' +
+                  '<button type="button" class="copyBtn" data-topic="' + t + '">copy</button></li>';
+        });
+        html += '</ul>';
+        resultsEl.innerHTML = html;
+
+        resultsEl.querySelectorAll(".copyBtn").forEach(function(btn) {
+          btn.addEventListener("click", function() {
+            navigator.clipboard.writeText(btn.getAttribute("data-topic")).then(function() {
+              btn.textContent = "copied!";
+              setTimeout(function() { btn.textContent = "copy"; }, 1500);
+            });
+          });
+        });
+      });
+    })();
+  </script>
+
 
   <footer>
     Unofficial tool, not affiliated with Fass.se or Sveriges Apoteksförening.
