@@ -433,6 +433,11 @@ def send_email_notification(events):
     ]
 
     if not filtered:
+        if not events:
+            log(f"Email configured for {to_addr}, but no new stock events this run -- nothing to send.")
+        else:
+            log(f"Email configured for {to_addr}, but none of this run's {len(events)} new event(s) "
+                f"matched your NOTIFY_STRENGTHS/NOTIFY_REGIONS filters -- nothing to send.")
         return
 
     lines = [f"- {e['strength']} mcg at {e['name']}, {e['city']} ({e['region_name']})" for e in filtered]
