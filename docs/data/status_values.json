@@ -1,7 +1,7 @@
 {
-  "'NOT_IN_STOCK_SHORTAGE_INFO'": {
-    "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5832,
+  "'NOT_IN_STOCK'": {
+    "raw_value": "NOT_IN_STOCK",
+    "count": 1209,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -15,12 +15,12 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
-  "'FAILED'": {
-    "raw_value": "FAILED",
-    "count": 196,
+  "'NOT_IN_STOCK_SHORTAGE_INFO'": {
+    "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
+    "count": 4819,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Vikbolandet Bygdev 13 Ö.Husby",
-    "example_city": "Vikbolandet",
+    "example_pharmacy": "Apoteket C W Scheele",
+    "example_city": "Stockholm",
     "example_strength": "37.5"
   },
   "'IN_STOCK'": {
