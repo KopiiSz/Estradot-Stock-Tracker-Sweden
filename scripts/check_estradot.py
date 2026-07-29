@@ -179,26 +179,24 @@ def collect_pharmacies(session):
 def is_in_stock(raw_status):
     """Classify a raw stockInformation value as in-stock or not.
 
-    NOTE ON THIS FUNCTION'S HISTORY (kept deliberately, this logic has
-    been wrong twice already and needs real evidence, not more guesses):
-    1. First version: excluded only two known "not in stock" strings,
-       treated everything else as in-stock. Confirmed to correctly catch
-       real positives (100mcg hits verified manually), but likely also
-       counted at least one other "not really in stock" status as a
-       false positive (probably an "orderable but not in stock" status,
-       matching the "Beställningsvara" label seen on the Fass website).
-    2. Second version: required the raw value to literally be Python
-       `True`. This was WRONG -- it made every confirmed-real positive
-       disappear too, proving the genuine in-stock signal is some other
-       value, not boolean True.
-    Reverting to the exclusion-based approach (safe: doesn't lose real
-    positives), while docs/data/status_values.json now logs every
-    distinct raw value seen each run with an example pharmacy. Once we
-    see that file's contents, we can add the specific "not really in
-    stock" status string(s) to this exclusion list with confidence,
-    instead of guessing a third time.
+    CONFIRMED FROM REAL DATA (via docs/data/status_values.json across
+    the full ~1247-pharmacy x 5-strength dataset): Fass uses exactly
+    four distinct values for this field:
+        "NOT_IN_STOCK_SHORTAGE_INFO"  -> not in stock
+        "NO_SERVICE"                  -> pharmacy doesn't report stock
+        "IN_STOCK"                    -> genuinely in stock
+        "FEW_IN_STOCK"                -> genuinely in stock, low quantity
+    No ambiguous "orderable but not in stock" status actually exists --
+    that was a reasonable worry given the "Beställningsvara" label seen
+    on the Fass website, but the real API data doesn't bear it out.
+
+    This is now an explicit allow-list (safer than the earlier
+    exclusion-based version): only values known to mean "in stock"
+    count as such. If Fass ever introduces a new status we haven't seen,
+    it will correctly fall on the "not confirmed in stock" side rather
+    than being assumed positive by default.
     """
-    return raw_status not in ("NOT_IN_STOCK_SHORTAGE_INFO", "NO_SERVICE", "UNKNOWN", None, False)
+    return raw_status in ("IN_STOCK", "FEW_IN_STOCK")
 
 
 def run_all_checks(session, gln_list):
