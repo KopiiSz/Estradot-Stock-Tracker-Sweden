@@ -71,7 +71,7 @@
 </head>
 <body>
   <h1>Estradot® stock tracker — Sweden</h1>
-  <p class="subtitle">Last checked: 2026-07-29 18:44 UTC · Data via Fass.se / Sveriges Apoteksförening</p>
+  <p class="subtitle">Last checked: 2026-07-29 19:00 UTC · Data via Fass.se / Sveriges Apoteksförening</p>
 
   <div class="stats"><div class="stat"><div class="stat-num">0</div><div class="stat-label">25 mcg</div></div><div class="stat"><div class="stat-num">0</div><div class="stat-label">37.5 mcg</div></div><div class="stat"><div class="stat-num">0</div><div class="stat-label">50 mcg</div></div><div class="stat"><div class="stat-num">0</div><div class="stat-label">75 mcg</div></div><div class="stat"><div class="stat-num">17</div><div class="stat-label">100 mcg</div></div></div>
 
@@ -200,15 +200,12 @@
   
   <h2>Get notified</h2>
   <p class="subtitle">
-    Pick a strength and an area below, and this shows you the exact
-    <a href="https://ntfy.sh" target="_blank" rel="noopener">ntfy</a> topic
-    name(s) to subscribe to for just that combination -- no account or
-    sign-up on this site, your picks are only remembered in this browser.
+    Pick the strength(s) and area(s) you want to hear about, and this shows
+    you the two values to set as GitHub repository secrets so the tracker
+    only emails you about what you actually care about. Your picks are
+    remembered in this browser for next time.
   </p>
   <div class="notif-panel">
-    <label class="secret-label" for="baseSecret">Your personal code (any long random string -- keep it private, it's what makes these topics yours alone):</label>
-    <input id="baseSecret" type="text" placeholder="e.g. river-lamp-92-owl" autocomplete="off">
-
     <fieldset>
       <legend>Strength</legend>
       <div class="cb-grid"><label><input type="checkbox" class="strengthCb" value="25"> 25 mcg</label><label><input type="checkbox" class="strengthCb" value="37.5"> 37.5 mcg</label><label><input type="checkbox" class="strengthCb" value="50"> 50 mcg</label><label><input type="checkbox" class="strengthCb" value="75"> 75 mcg</label><label><input type="checkbox" class="strengthCb" value="100"> 100 mcg</label></div>
@@ -222,13 +219,13 @@
       <div class="cb-grid region-grid"><label><input type="checkbox" class="regionCb" value="stockholm"> Stockholm</label><label><input type="checkbox" class="regionCb" value="uppsala"> Uppsala</label><label><input type="checkbox" class="regionCb" value="sodermanland"> Södermanland</label><label><input type="checkbox" class="regionCb" value="ostergotland"> Östergötland</label><label><input type="checkbox" class="regionCb" value="jonkoping"> Jönköping</label><label><input type="checkbox" class="regionCb" value="kronoberg"> Kronoberg</label><label><input type="checkbox" class="regionCb" value="kalmar"> Kalmar</label><label><input type="checkbox" class="regionCb" value="gotland"> Gotland</label><label><input type="checkbox" class="regionCb" value="blekinge"> Blekinge</label><label><input type="checkbox" class="regionCb" value="skane"> Skåne</label><label><input type="checkbox" class="regionCb" value="halland"> Halland</label><label><input type="checkbox" class="regionCb" value="vastra-gotaland"> Västra Götaland</label><label><input type="checkbox" class="regionCb" value="varmland"> Värmland</label><label><input type="checkbox" class="regionCb" value="orebro"> Örebro</label><label><input type="checkbox" class="regionCb" value="vastmanland"> Västmanland</label><label><input type="checkbox" class="regionCb" value="dalarna"> Dalarna</label><label><input type="checkbox" class="regionCb" value="gavleborg"> Gävleborg</label><label><input type="checkbox" class="regionCb" value="vasternorrland"> Västernorrland</label><label><input type="checkbox" class="regionCb" value="jamtland"> Jämtland</label><label><input type="checkbox" class="regionCb" value="vasterbotten"> Västerbotten</label><label><input type="checkbox" class="regionCb" value="norrbotten"> Norrbotten</label></div>
     </fieldset>
 
-    <button id="generateBtn">Show my topics</button>
+    <button id="generateBtn">Show my config</button>
     <div id="topicResults"></div>
   </div>
 
   <script>
     (function() {
-      var STORAGE_KEY = "estradot_notif_prefs_v1";
+      var STORAGE_KEY = "estradot_notif_prefs_v2";
 
       function saved() {
         try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
@@ -240,8 +237,6 @@
       }
 
       var prefs = saved();
-      var secretEl = document.getElementById("baseSecret");
-      if (prefs.secret) secretEl.value = prefs.secret;
 
       document.querySelectorAll(".strengthCb").forEach(function(cb) {
         if (prefs.strengths && prefs.strengths.indexOf(cb.value) !== -1) cb.checked = true;
@@ -253,46 +248,44 @@
       if (prefs.allSweden) allSwedenEl.checked = true;
 
       document.getElementById("generateBtn").addEventListener("click", function() {
-        var secret = secretEl.value.trim();
         var resultsEl = document.getElementById("topicResults");
         resultsEl.innerHTML = "";
-
-        if (!secret) {
-          resultsEl.innerHTML = '<p class="warn">Enter a personal code first.</p>';
-          return;
-        }
 
         var strengths = Array.prototype.slice.call(document.querySelectorAll(".strengthCb:checked")).map(function(cb) { return cb.value; });
         var regions = Array.prototype.slice.call(document.querySelectorAll(".regionCb:checked")).map(function(cb) { return cb.value; });
         var allSweden = allSwedenEl.checked;
 
-        save({ secret: secret, strengths: strengths, regions: regions, allSweden: allSweden });
+        save({ strengths: strengths, regions: regions, allSweden: allSweden });
 
-        if (strengths.length === 0 || (!allSweden && regions.length === 0)) {
-          resultsEl.innerHTML = '<p class="warn">Pick at least one strength and at least one area (or "All of Sweden").</p>';
+        if (strengths.length === 0) {
+          resultsEl.innerHTML = '<p class="warn">Pick at least one strength.</p>';
+          return;
+        }
+        if (!allSweden && regions.length === 0) {
+          resultsEl.innerHTML = '<p class="warn">Pick at least one area, or check "All of Sweden".</p>';
           return;
         }
 
-        var topics = [];
-        strengths.forEach(function(s) {
-          if (allSweden) topics.push(secret + "-" + s + "mcg-all");
-          regions.forEach(function(r) { topics.push(secret + "-" + s + "mcg-" + r); });
-        });
+        var strengthsValue = strengths.join(",");
+        var regionsValue = allSweden ? "" : regions.join(",");
 
-        var html = '<p>Subscribe to ' + (topics.length === 1 ? "this topic" : "these topics") + ' in the ntfy app (or tap to open in browser):</p><ul class="topic-list">';
-        topics.forEach(function(t) {
-          html += '<li><code>' + t + '</code> ' +
-                  '<a href="https://ntfy.sh/' + t + '" target="_blank" rel="noopener">open</a> ' +
-                  '<button type="button" class="copyBtn" data-topic="' + t + '">copy</button></li>';
-        });
+        function row(name, value, note) {
+          return '<li><code>' + name + '</code> = <code>' + (value || "(leave blank)") + '</code> ' +
+                 '<button type="button" class="copyBtn" data-value="' + value + '">copy value</button>' +
+                 (note ? '<div class="note">' + note + '</div>' : '') + '</li>';
+        }
+
+        var html = '<p>In your repo: <strong>Settings &rarr; Secrets and variables &rarr; Actions</strong>, set these two secrets:</p><ul class="topic-list">';
+        html += row("NOTIFY_STRENGTHS", strengthsValue);
+        html += row("NOTIFY_REGIONS", regionsValue, allSweden ? "Blank means every region in Sweden." : "");
         html += '</ul>';
         resultsEl.innerHTML = html;
 
         resultsEl.querySelectorAll(".copyBtn").forEach(function(btn) {
           btn.addEventListener("click", function() {
-            navigator.clipboard.writeText(btn.getAttribute("data-topic")).then(function() {
+            navigator.clipboard.writeText(btn.getAttribute("data-value")).then(function() {
               btn.textContent = "copied!";
-              setTimeout(function() { btn.textContent = "copy"; }, 1500);
+              setTimeout(function() { btn.textContent = "copy value"; }, 1500);
             });
           });
         });

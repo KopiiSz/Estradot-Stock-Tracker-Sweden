@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 6000,
+    "count": 5999,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -15,13 +15,13 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
-  "'FAILED'": {
-    "raw_value": "FAILED",
-    "count": 28,
+  "'TIMEOUT'": {
+    "raw_value": "TIMEOUT",
+    "count": 29,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Kungsbacka Kungsmässan",
-    "example_city": "Kungsbacka",
-    "example_strength": "50"
+    "example_pharmacy": "DOZ Apotek Helsingborg Råå",
+    "example_city": "Helsingborg",
+    "example_strength": "25"
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
