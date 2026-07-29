@@ -176,13 +176,38 @@ def collect_pharmacies(session):
     return all_pharmacies
 
 
-def is_in_stock(entry):
-       info = entry.get("stockInformation", "UNKNOWN")
-       return info not in ("NOT_IN_STOCK_SHORTAGE_INFO", "NO_SERVICE", "UNKNOWN") and info is not False
+def is_in_stock(raw_status):
+    """Classify a raw stockInformation value as in-stock or not.
+
+    NOTE ON THIS FUNCTION'S HISTORY (kept deliberately, this logic has
+    been wrong twice already and needs real evidence, not more guesses):
+    1. First version: excluded only two known "not in stock" strings,
+       treated everything else as in-stock. Confirmed to correctly catch
+       real positives (100mcg hits verified manually), but likely also
+       counted at least one other "not really in stock" status as a
+       false positive (probably an "orderable but not in stock" status,
+       matching the "Beställningsvara" label seen on the Fass website).
+    2. Second version: required the raw value to literally be Python
+       `True`. This was WRONG -- it made every confirmed-real positive
+       disappear too, proving the genuine in-stock signal is some other
+       value, not boolean True.
+    Reverting to the exclusion-based approach (safe: doesn't lose real
+    positives), while docs/data/status_values.json now logs every
+    distinct raw value seen each run with an example pharmacy. Once we
+    see that file's contents, we can add the specific "not really in
+    stock" status string(s) to this exclusion list with confidence,
+    instead of guessing a third time.
+    """
+    return raw_status not in ("NOT_IN_STOCK_SHORTAGE_INFO", "NO_SERVICE", "UNKNOWN", None, False)
 
 
 def run_all_checks(session, gln_list):
-    """Returns {strength: {gln: bool_in_stock}}"""
+    """Returns {strength: {gln: raw_stockInformation_value}}.
+
+    Deliberately stores the *raw* value (not just a bool) so we can
+    audit exactly what Fass returns and catch misclassifications --
+    see main()'s status-value summary output.
+    """
     results = {}
     for strength, product_id in PRODUCT_IDS.items():
         log(f"Checking {strength} mikrogram...")
@@ -198,9 +223,9 @@ def run_all_checks(session, gln_list):
             for entry in entries:
                 gln = entry.get("glnCode")
                 if gln:
-                    stock_by_gln[gln] = is_in_stock(entry)
+                    stock_by_gln[gln] = entry.get("stockInformation")
             time.sleep(DELAY)
-        hits = sum(1 for v in stock_by_gln.values() if v)
+        hits = sum(1 for v in stock_by_gln.values() if is_in_stock(v))
         log(f"  -> {hits} in stock")
         results[strength] = stock_by_gln
     return results
@@ -226,8 +251,9 @@ def find_new_stock_events(previous, current, pharmacies):
     prev_stock = previous.get("stock", {})
     for strength, gln_map in current.items():
         prev_map = prev_stock.get(strength, {})
-        for gln, in_stock in gln_map.items():
-            was_in_stock = prev_map.get(gln, False)
+        for gln, raw_status in gln_map.items():
+            in_stock = is_in_stock(raw_status)
+            was_in_stock = is_in_stock(prev_map.get(gln))
             if in_stock and not was_in_stock:
                 p = pharmacies.get(gln, {})
                 addr = p.get("visitingAddress", {})
@@ -263,8 +289,8 @@ def render_html(current, pharmacies, generated_at, events_history):
     rows_html = []
     combined = {}
     for strength in strengths:
-        for gln, in_stock in current[strength].items():
-            combined.setdefault(gln, {})[strength] = in_stock
+        for gln, raw_status in current[strength].items():
+            combined.setdefault(gln, {})[strength] = is_in_stock(raw_status)
 
     any_hits = []
     for gln, per_strength in combined.items():
@@ -295,7 +321,7 @@ def render_html(current, pharmacies, generated_at, events_history):
         </tr>""")
 
     summary_html = "".join(
-        f'<div class="stat"><div class="stat-num">{sum(1 for v in current[s].values() if v)}</div>'
+        f'<div class="stat"><div class="stat-num">{sum(1 for v in current[s].values() if is_in_stock(v))}</div>'
         f'<div class="stat-label">{s} mcg</div></div>'
         for s in strengths
     )
@@ -375,6 +401,32 @@ def render_html(current, pharmacies, generated_at, events_history):
     return html
 
 
+def build_status_value_summary(current, pharmacies):
+    """Collect every distinct raw stockInformation value seen this run,
+    with a count and one example pharmacy, so we can verify our
+    is_in_stock() classification against real evidence instead of
+    guessing. Written to docs/data/status_values.json (public, so it's
+    easy to inspect without needing dev tools again).
+    """
+    summary = {}  # raw_value (as string key) -> {count, example, classified_as_in_stock}
+    for strength, gln_map in current.items():
+        for gln, raw_status in gln_map.items():
+            key = repr(raw_status)  # distinguishes True (bool) from "True" (string) etc.
+            if key not in summary:
+                p = pharmacies.get(gln, {})
+                addr = p.get("visitingAddress", {})
+                summary[key] = {
+                    "raw_value": raw_status,
+                    "count": 0,
+                    "classified_as_in_stock": is_in_stock(raw_status),
+                    "example_pharmacy": p.get("name", gln),
+                    "example_city": addr.get("city", ""),
+                    "example_strength": strength,
+                }
+            summary[key]["count"] += 1
+    return summary
+
+
 def main():
     session = requests.Session()
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
@@ -384,6 +436,12 @@ def main():
     gln_list = list(pharmacies.keys())
 
     current = run_all_checks(session, gln_list)
+
+    status_summary = build_status_value_summary(current, pharmacies)
+    log("Distinct stockInformation values seen this run:")
+    for key, info in sorted(status_summary.items(), key=lambda kv: -kv[1]["count"]):
+        log(f"  {info['raw_value']!r} -> classified in_stock={info['classified_as_in_stock']}, "
+            f"count={info['count']}, e.g. {info['example_pharmacy']} ({info['example_city']}, {info['example_strength']}mcg)")
 
     events = find_new_stock_events(previous, current, pharmacies)
     if events:
@@ -412,7 +470,11 @@ def main():
         "stock": current,
     }, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    log("Done. Wrote docs/index.html and docs/data/latest.json.")
+    (DOCS_DIR / "data" / "status_values.json").write_text(
+        json.dumps(status_summary, indent=2, ensure_ascii=False, default=str), encoding="utf-8"
+    )
+
+    log("Done. Wrote docs/index.html, docs/data/latest.json, docs/data/status_values.json.")
 
 
 if __name__ == "__main__":
