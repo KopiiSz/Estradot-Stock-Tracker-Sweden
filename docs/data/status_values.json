@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5919,
+    "count": 6000,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -17,11 +17,11 @@
   },
   "'FAILED'": {
     "raw_value": "FAILED",
-    "count": 109,
+    "count": 28,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Växjö Centrallasarettet Hus K",
-    "example_city": "Växjö",
-    "example_strength": "37.5"
+    "example_pharmacy": "Kungsbacka Kungsmässan",
+    "example_city": "Kungsbacka",
+    "example_strength": "50"
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
