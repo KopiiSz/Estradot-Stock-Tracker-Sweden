@@ -5073,12 +5073,12 @@
       "7312527004878": false,
       "7313276007400": false,
       "7313276009756": false,
-      "7312666263013": false,
+      "7312666263013": true,
       "7312527000047": false,
       "7312527002577": false,
       "7312446002429": false,
       "7350051480294": false,
-      "7312666050019": false,
+      "7312666050019": true,
       "7312446003204": false,
       "7312527000399": false,
       "7312527002164": false,
@@ -5086,7 +5086,7 @@
       "7312527000443": false,
       "7312527004793": false,
       "7312527000375": false,
-      "7312666218020": false,
+      "7312666218020": true,
       "7312527004885": false,
       "7312527005196": false,
       "7312446003198": false,
@@ -5434,7 +5434,7 @@
       "7313276002313": false,
       "7312446004195": false,
       "7312446004959": false,
-      "7312527002539": false,
+      "7312527002539": true,
       "7350051481772": false,
       "7312446004171": false,
       "7312527003161": false,
@@ -5605,7 +5605,7 @@
       "7312527003932": false,
       "7312446003181": false,
       "7312527005301": false,
-      "7312527003925": false,
+      "7312527003925": true,
       "7312527003918": false,
       "7312527000771": false,
       "7313276012398": false,
@@ -5630,7 +5630,7 @@
       "7312446001439": false,
       "7312446000869": false,
       "7350051481314": false,
-      "7313276003693": false,
+      "7313276003693": true,
       "7312446004829": false,
       "7313276003686": false,
       "7312527002690": false,
@@ -5815,7 +5815,7 @@
       "7312446000166": false,
       "7312527001259": false,
       "7312527001242": false,
-      "7313276002191": false,
+      "7313276002191": true,
       "7312527004236": false,
       "7313276001576": false,
       "7312446000173": false,
@@ -5828,9 +5828,9 @@
       "7312527005011": false,
       "7312446003808": false,
       "7312527001204": false,
-      "7313276012770": false,
+      "7313276012770": true,
       "7312446000814": false,
-      "7313276012534": false,
+      "7313276012534": true,
       "7312446000272": false,
       "7313276008131": false,
       "7312446004515": false,
@@ -5867,7 +5867,7 @@
       "7312527004625": false,
       "7313276006762": false,
       "7312446000418": false,
-      "7312446000425": false,
+      "7312446000425": true,
       "7312446004966": false,
       "7312446001057": false,
       "7312527002706": false,
@@ -5915,7 +5915,7 @@
       "7313276012817": false,
       "7312527000849": false,
       "7313276000326": false,
-      "7313276005697": false,
+      "7313276005697": true,
       "7312527000818": false,
       "7312527004403": false,
       "7312446001514": false,
@@ -5958,15 +5958,15 @@
       "7312446004744": false,
       "7313276012824": false,
       "7312527000948": false,
-      "7312446002962": false,
+      "7312446002962": true,
       "7312666233016": false,
       "7313276004751": false,
       "7312527000320": false,
       "7312527004915": false,
-      "7312446000401": false,
+      "7312446000401": true,
       "7313276017829": false,
       "7313276007622": false,
-      "7312446003396": false,
+      "7312446003396": true,
       "7313276013951": false,
       "7312527003628": false,
       "7312527001709": false,
@@ -5975,56 +5975,56 @@
       "7313276009695": false,
       "7313276003921": false,
       "7312527003581": false,
-      "7312446004386": false,
+      "7312446004386": true,
       "7313276003938": false,
-      "7312446003761": false,
+      "7312446003761": true,
       "7313276008797": false,
       "7312527001563": false,
       "7312527001556": false,
       "7313276004034": false,
-      "7312446001699": false,
+      "7312446001699": true,
       "7313276004126": false,
       "7312527001549": false,
       "7313276003969": false,
       "7312527004427": false,
       "7312527004410": false,
       "7313276003945": false,
-      "7312446001705": false,
+      "7312446001705": true,
       "7313276003976": false,
-      "7312446001712": false,
-      "7312446001729": false,
-      "7313276004133": false,
+      "7312446001712": true,
+      "7312446001729": true,
+      "7313276004133": true,
       "7312527001914": false,
       "7313276003952": false,
-      "7312446003129": false,
+      "7312446003129": true,
       "7312527001532": false,
-      "7313276012411": false,
+      "7313276012411": true,
       "7312527003147": false,
       "7313276003624": false,
       "7313276003822": false,
       "7350051480195": false,
       "7313276003792": false,
-      "7312446004898": false,
+      "7312446004898": true,
       "7312527004380": false,
       "7312527002430": false,
       "7313276003648": false,
       "7313276018925": false,
       "7312527004397": false,
-      "7312446004430": false,
-      "7312446000999": false,
+      "7312446004430": true,
+      "7312446000999": true,
       "7312527004441": false,
       "7313276004256": false,
-      "7312446000845": false,
-      "7313276003853": false,
-      "7312446003495": false,
+      "7312446000845": true,
+      "7313276003853": true,
+      "7312446003495": true,
       "7312666282014": false,
       "7313276003815": false,
       "7312527001495": false,
-      "7312446000975": false,
-      "7312446002689": false,
+      "7312446000975": true,
+      "7312446002689": true,
       "7312527005318": false,
       "7313276000982": false,
-      "7312446000388": false,
+      "7312446000388": true,
       "7313276000975": false,
       "7313276000999": false,
       "7312527005257": false,
@@ -6032,16 +6032,16 @@
       "7312527060010": false,
       "7312527004076": false,
       "7350051481420": false,
-      "7312446000371": false,
+      "7312446000371": true,
       "7312527001006": false,
       "7312527000931": false,
-      "7312446004003": false,
+      "7312446004003": true,
       "7313276008599": false,
-      "7312446003952": false,
+      "7312446003952": true,
       "7313276001934": false,
       "7312527004199": false,
       "7313276009398": false,
-      "7312446003839": false,
+      "7312446003839": true,
       "7350051480034": false,
       "7312527002225": false,
       "7350051480027": false,
@@ -6049,85 +6049,85 @@
       "7313276016907": false,
       "7312527004205": false,
       "7313276001965": false,
-      "7312446000791": false,
+      "7312446000791": true,
       "7313276001903": false,
       "7312527004182": false,
-      "7312446000746": false,
+      "7312446000746": true,
       "7312527001228": false,
       "7312527004168": false,
       "7313276001835": false,
       "7312527003895": false,
-      "7312446000265": false,
-      "7312446000708": false,
-      "7313276001828": false,
+      "7312446000265": true,
+      "7312446000708": true,
+      "7313276001828": true,
       "7312527002799": false,
-      "7312446003556": false,
+      "7312446003556": true,
       "7313276001743": false,
       "7312527003383": false,
       "7350051480041": false,
-      "7312446003334": false,
+      "7312446003334": true,
       "7312666265024": false,
-      "7312446003969": false,
+      "7312446003969": true,
       "7312527000535": false,
       "7313276012664": false,
-      "7312446000777": false,
+      "7312446000777": true,
       "7312527003222": false,
-      "7312446003563": false,
+      "7312446003563": true,
       "7313276008780": false,
       "7313276001804": false,
       "7313276012800": false,
       "7312527000061": false,
-      "7312446003365": false,
-      "7312446003983": false,
+      "7312446003365": true,
+      "7312446003983": true,
       "7313276008926": false,
       "7312527003703": false,
       "7313276017560": false,
       "7312527005288": false,
-      "7312446004614": false,
+      "7312446004614": true,
       "7312527004977": false,
       "7313276007943": false,
-      "7312446000043": false,
+      "7312446000043": true,
       "7312527005028": false,
-      "7312446003150": false,
-      "7312446000067": false,
-      "7312446000036": false,
+      "7312446003150": true,
+      "7312446000067": true,
+      "7312446000036": true,
       "7313276008094": false,
-      "7312446003297": false,
+      "7312446003297": true,
       "7313276013975": false,
       "7312527000542": false,
-      "7312446004720": false,
+      "7312446004720": true,
       "7313276008100": false,
       "7313276013494": false,
       "7312527004984": false,
       "7312527001273": false,
-      "7312446003075": false,
+      "7312446003075": true,
       "7312527002218": false,
       "7312527003833": false,
       "7313276017041": false,
       "7312527000559": false,
       "7350051480157": false,
       "7313276007134": false,
-      "7312446000081": false,
-      "7312446004775": false,
+      "7312446000081": true,
+      "7312446004775": true,
       "7350051481444": false,
       "7312527005240": false,
-      "7312446004089": false,
-      "7312446000180": false,
+      "7312446004089": true,
+      "7312446000180": true,
       "7313276012749": false,
       "7312527002294": false,
       "7313276006250": false,
-      "7312446001897": false,
-      "7312446001859": false,
+      "7312446001897": true,
+      "7312446001859": true,
       "7312527002027": false,
       "7313276009343": false,
       "7313276016464": false,
       "7313276008667": false,
-      "7312446003440": false,
+      "7312446003440": true,
       "7312527005103": false,
-      "7312446001903": false,
-      "7312446002122": false,
+      "7312446001903": true,
+      "7312446002122": true,
       "7313276006120": false,
-      "7312446001743": false,
+      "7312446001743": true,
       "7313276008346": false,
       "7312527005066": false,
       "7313276006182": false,
@@ -6150,7 +6150,7 @@
       "7312527005127": false,
       "7312527004533": false,
       "7313276017812": false,
-      "7312666218013": false,
+      "7312666218013": true,
       "7313276016938": false,
       "7312527004526": false,
       "7312527005134": false,
@@ -6162,11 +6162,11 @@
       "7312527003338": false,
       "7350051481765": false,
       "7312527000467": false,
-      "7312446001989": false,
+      "7312446001989": true,
       "7313276008247": false,
       "7312527005059": false,
       "7312527003482": false,
-      "7312446003389": false,
+      "7312446003389": true,
       "7313276007875": false,
       "7312527003178": false,
       "7350051481291": false,
@@ -6174,7 +6174,7 @@
       "7313276002559": false,
       "7313276002597": false,
       "7312527001303": false,
-      "7312446003693": false,
+      "7312446003693": true,
       "7300009032891": false,
       "7313276019434": false,
       "7312527004298": false,
@@ -6184,23 +6184,23 @@
       "7312527002331": false,
       "7313276001781": false,
       "7313276016402": false,
-      "7312446004881": false,
+      "7312446004881": true,
       "7350051481536": false,
-      "7312446000807": false,
+      "7312446000807": true,
       "7312527004052": false,
       "7312527002355": false,
-      "7312446001286": false,
-      "7312446003914": false,
-      "7312446000784": false,
-      "7312446004072": false,
+      "7312446001286": true,
+      "7312446003914": true,
+      "7312446000784": true,
+      "7312446004072": true,
       "7312527000900": false,
       "7313276000685": false,
       "7313276019274": false,
       "7312527002980": false,
-      "7312446003549": false,
+      "7312446003549": true,
       "7312527004045": false,
-      "7312446000661": false,
-      "7312446004584": false,
+      "7312446000661": true,
+      "7312446004584": true,
       "7300009060948": false,
       "7312527005349": false,
       "7313276006335": false,
@@ -6213,40 +6213,568 @@
       "7313276003884": false,
       "7312527001525": false,
       "7313276000357": false,
-      "7312446001460": false,
+      "7312446001460": true,
       "7312527005271": false,
       "7312527004038": false,
       "7313276012541": false,
       "7312527000597": false,
       "7313276007110": false,
-      "7312446004508": false,
+      "7312446004508": true,
       "7312527000580": false,
       "7313276013531": false,
       "7312666266014": false,
       "7312666091012": false,
       "7312527002140": false,
       "7313276016471": false,
-      "7312446003860": false,
-      "7312446004133": false,
+      "7312446003860": true,
+      "7312446004133": true,
       "7313276007189": false,
-      "7312446003648": false,
+      "7312446003648": true,
       "7313276009671": false,
       "7312527000719": false,
       "7312527004816": false,
       "7312527000634": false,
-      "7312446000395": false,
-      "7313276006779": false,
-      "7312446000289": false,
+      "7312446000395": true,
+      "7313276006779": true,
+      "7312446000289": true,
       "7313276017805": false,
       "7312527002362": false,
       "7312527002102": false,
       "7313276013678": false,
-      "7312446003082": false,
+      "7312446003082": true,
       "7312527001679": false,
       "7312527001501": false
     }
   },
   "history": [
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Kvantum Strömstad",
+      "city": "Strömstad"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Strömstad Nordby Köpcenter",
+      "city": "Strömstad"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apoteket Foxen",
+      "city": "Töcksfors"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Ed Magasinsgatan 10",
+      "city": "Ed"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Trelleborg ICA Maxi",
+      "city": "Trelleborg"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Trelleborg Lasarettet",
+      "city": "Trelleborg"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Kvantum Svedala",
+      "city": "Svedala"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Ystad ICA Kvantum",
+      "city": "Ystad"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Edsbyn Sporthallsvägen 2",
+      "city": "Edsbyn"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Trosa, ICA Kvantum",
+      "city": "Trosa"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Nyköping Pål Jungs Hage",
+      "city": "Nyköping"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Nyköping ICA Maxi",
+      "city": "Nyköping"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Nyköpings lasarett",
+      "city": "Nyköping"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Vimmerby Norrtullsgatan 5",
+      "city": "Vimmerby"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Nynäshamn ICA Maxi",
+      "city": "Nynäshamn"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Nynäshamn",
+      "city": "Nynäshamn"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Gamleby Centrum",
+      "city": "Gamleby"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Maxi Västervik",
+      "city": "Västervik"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Maxi Visby",
+      "city": "Visby"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Maxi Kungsbacka",
+      "city": "Kungsbacka"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kungsbacka Kungsmässan",
+      "city": "Kungsbacka"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kronans Apotek Ytterby",
+      "city": "Ytterby"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Luleå Björkskatans vårdcentral",
+      "city": "Luleå"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Kvantum Luleå",
+      "city": "Luleå"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Luleå Skurholmen",
+      "city": "Luleå"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Luleå ICA Maxi",
+      "city": "Luleå"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Älvsbyn Storgatan 27",
+      "city": "Älvsbyn"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Öjebyn Vårdcentralen",
+      "city": "Öjebyn"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Tomelilla Centralgatan 2",
+      "city": "Tomelilla"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Simrishamns sjukhus",
+      "city": "Simrishamn"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Sjöbo ICA Kvantum",
+      "city": "Sjöbo"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Löberöd",
+      "city": "Löberöd"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Hörby",
+      "city": "Hörby"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Hässleholm ICA Kvantum",
+      "city": "Hässleholm"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Maxi Hässleholm",
+      "city": "Hässleholm"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat Järnvägsgatan 5A, Sölvesborg",
+      "city": "Sölvesborg"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Broby Tydingegatan 1",
+      "city": "Broby"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Bromölla ICA Maxi",
+      "city": "Bromölla"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Vinslöv Stora Torggatan 1",
+      "city": "Vinslöv"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Åhus ICA Kvantum",
+      "city": "Åhus"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kristianstad Centralsjukhuset",
+      "city": "Kristianstad"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Maxi Kristianstad",
+      "city": "Kristianstad"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Ronneby ICA Maxi",
+      "city": "Ronneby"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Mörlunda Vårdcentralen",
+      "city": "Mörlunda"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Karlskrona Blekingesjukhuset",
+      "city": "Karlskrona"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Maxi Lyckeby Karlskrona",
+      "city": "Lyckeby"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Oskarshamn ICA Maxi",
+      "city": "Oskarshamn"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apoteket Lejonet",
+      "city": "Oskarshamn"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Oskarshamn Oskarshamns Sjukhus",
+      "city": "Oskarshamn"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Rödeby Movägen 4",
+      "city": "Rödeby"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Blomstermåla Vårdcentralen",
+      "city": "Blomstermåla"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Ljungbyholm",
+      "city": "Ljungbyholm"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kalmar ICA Maxi",
+      "city": "Kalmar"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kalmar Sjukhuset Huvudentren",
+      "city": "Kalmar"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Lidköping Sjukhuset",
+      "city": "Lidköping"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Lidköping Guldvingens VC",
+      "city": "Lidköping"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Skövde Elins Esplanad",
+      "city": "Skövde"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Skövde Commerce",
+      "city": "Skövde"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Orsa Kyrkogatan 5",
+      "city": "Orsa"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Mora ICA Maxi",
+      "city": "Mora"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apoteket Tallen",
+      "city": "Vansbro"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Fagersta Bergslagssjukhuset",
+      "city": "Fagersta"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Grängesberg Örabergsvägen 5",
+      "city": "Grängesberg"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Ludvika ICA Kvantum",
+      "city": "Ludvika"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Supermarket Leksand",
+      "city": "Leksand"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apoteket Kupolen",
+      "city": "Borlänge"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apotek Hjärtat ICA Maxi Borlänge",
+      "city": "Borlänge"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apoteket Björken",
+      "city": "Hoting"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Sveg",
+      "city": "Sveg"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Funäsdalen",
+      "city": "Funäsdalen"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Hede",
+      "city": "Hede"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Lit Hälsocentralen",
+      "city": "Lit"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Östersund ICA Kvantum",
+      "city": "Östersund"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Östersund ICA Maxi",
+      "city": "Östersund"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kungälv ICA Maxi",
+      "city": "Kungälv"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Mellerud Norra Kungsgatan 1",
+      "city": "Mellerud"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Myggenäs Tjörn",
+      "city": "Myggenäs"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apoteket Ugglan",
+      "city": "Ånge"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Åmål Mellanbrogatan 3",
+      "city": "Åmål"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apoteket Storgatan",
+      "city": "Olofström"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apoteket Lönnen",
+      "city": "Nybro"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apoteket Örnen",
+      "city": "Lessebo"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Apoteket Visenten EA",
+      "city": "Avesta"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kronans Apotek Gävle Bomhus",
+      "city": "Gävle"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kronans Apotek Landskrona",
+      "city": "Landskrona"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kronans Apotek Elisedal",
+      "city": "Göteborg"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kronans Apotek Gbg Johanneberg",
+      "city": "Göteborg"
+    },
+    {
+      "timestamp": "2026-07-29 15:55",
+      "strength": "100",
+      "name": "Kronans Apotek Carlanderska Sjukhuset",
+      "city": "Göteborg"
+    },
     {
       "timestamp": "2026-07-28 18:29",
       "strength": "100",
@@ -6318,79 +6846,7 @@
       "strength": "100",
       "name": "Apoteket Storgatan",
       "city": "Olofström"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "100",
-      "name": "Apoteket Lönnen",
-      "city": "Nybro"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "100",
-      "name": "Apoteket Uttern",
-      "city": "Tingsryd"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "100",
-      "name": "Apoteket Örnen",
-      "city": "Lessebo"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "100",
-      "name": "Apoteket Visenten EA",
-      "city": "Avesta"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "100",
-      "name": "Kronans Apotek Gävle Bomhus",
-      "city": "Gävle"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "100",
-      "name": "Kronans Apotek Landskrona",
-      "city": "Landskrona"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "100",
-      "name": "Kronans Apotek Elisedal",
-      "city": "Göteborg"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "100",
-      "name": "Kronans Apotek Gbg Johanneberg",
-      "city": "Göteborg"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "100",
-      "name": "Kronans Apotek Carlanderska Sjukhuset",
-      "city": "Göteborg"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "50",
-      "name": "Ljungskile Vällebergsvägen 12",
-      "city": "Ljungskile"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "50",
-      "name": "ICA Kvantum Uddevalla",
-      "city": "Uddevalla"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "50",
-      "name": "Vänersborg ICA Kvantum",
-      "city": "Vänersborg"
     }
   ],
-  "last_run": "2026-07-29 15:35"
+  "last_run": "2026-07-29 15:55"
 }
