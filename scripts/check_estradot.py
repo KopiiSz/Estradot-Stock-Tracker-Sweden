@@ -5,20 +5,33 @@ Estradot nationwide stock tracker
 Runs on a schedule (via GitHub Actions), checks pharmacy stock across
 Sweden for all Estradot strengths using Fass.se's public pharmacy API,
 compares against the previous run, sends push notifications via ntfy.sh
-when something new comes into stock, and renders a static HTML page.
+and/or email when something new comes into stock, and renders a static
+HTML page.
 
 This is meant to be run non-interactively (cron/CI), not by hand -- for
 manual/ad-hoc checks with more CLI options, see check_estradot_availability.py.
 
 ENVIRONMENT VARIABLES
-    NTFY_TOPIC   (optional) -- a personal *base* string (not a literal
-                 topic name) used to derive several topics:
-                     {NTFY_TOPIC}                         -- catch-all, every event
-                     {NTFY_TOPIC}-{strength}mcg-all        -- one strength, anywhere in Sweden
-                     {NTFY_TOPIC}-{strength}mcg-{region}   -- one strength, one region
-                 The live page has an interactive panel that builds these
-                 topic names for you based on picks you make there.
-                 If unset, notifications are skipped (page still updates).
+    NTFY_TOPIC     (optional) -- a personal *base* string (not a literal
+                   topic name) used to derive several topics:
+                       {NTFY_TOPIC}                          -- catch-all, every event
+                       {NTFY_TOPIC}-{strength}mcg-all        -- one strength, anywhere in Sweden
+                       {NTFY_TOPIC}-{strength}mcg-{region}   -- one strength, one region
+                   The live page has an interactive panel that builds these
+                   topic names for you based on picks you make there.
+    SMTP_USERNAME  (optional) -- Gmail address to send email notifications from.
+    SMTP_PASSWORD  (optional) -- a Gmail "app password" (not your normal password).
+    NOTIFY_EMAIL   (optional) -- address to send notifications to. Defaults to
+                   SMTP_USERNAME (i.e. email yourself) if not set.
+    NOTIFY_STRENGTHS (optional) -- comma-separated strengths to email about,
+                   e.g. "75,100". Unset/empty = all strengths.
+    NOTIFY_REGIONS   (optional) -- comma-separated region slugs to email
+                   about, e.g. "stockholm,uppsala". Unset/empty = all of
+                   Sweden. The live page's "Get notified" panel shows you
+                   the exact values to use here based on checkboxes.
+    Both channels (ntfy/email) are independent and optional -- set either,
+    both, or neither (page still updates either way; notifications are
+    just skipped if unset).
 
 OUTPUTS
     docs/index.html               -- the live status page (published via GitHub Pages)
@@ -29,10 +42,12 @@ OUTPUTS
 
 import json
 import os
+import smtplib
 import sys
 import time
 import urllib.parse
 from datetime import datetime, timezone
+from email.mime.text import MIMEText
 from pathlib import Path
 
 import requests
@@ -377,6 +392,69 @@ def send_notifications(events):
             log(f"[!] Failed to send ntfy notification to '{topic}': {ex}")
 
 
+def send_email_notification(events):
+    """Email a summary of new-stock events matching your filters, if
+    SMTP is configured.
+
+    Uses Gmail's SMTP server with an "app password" (a per-app credential
+    you generate at myaccount.google.com/apppasswords -- requires 2-Step
+    Verification to be enabled on the Google account first). This is NOT
+    your normal Gmail password, and can be revoked independently at any time.
+
+    If a different email provider is preferred, only SMTP_HOST/SMTP_PORT
+    would need to change (both have sensible Gmail defaults below);
+    everything else stays the same.
+
+    FILTERING (both optional -- unset/empty means "no filter", i.e. match
+    everything for that dimension):
+        NOTIFY_STRENGTHS  comma-separated strengths, e.g. "75,100"
+        NOTIFY_REGIONS    comma-separated region slugs, e.g. "stockholm,uppsala"
+                          (see the "Get notified" panel on the live page --
+                          it shows you the exact values to use here based
+                          on checkboxes, no need to type slugs by hand)
+    """
+    username = os.environ.get("SMTP_USERNAME")
+    password = os.environ.get("SMTP_PASSWORD")
+    to_addr = os.environ.get("NOTIFY_EMAIL") or username
+    host = os.environ.get("SMTP_HOST", "smtp.gmail.com")
+    port = int(os.environ.get("SMTP_PORT", "465"))
+
+    if not username or not password:
+        log("SMTP_USERNAME/SMTP_PASSWORD not set, skipping email notification.")
+        return
+
+    wanted_strengths = {s.strip() for s in os.environ.get("NOTIFY_STRENGTHS", "").split(",") if s.strip()}
+    wanted_regions = {r.strip() for r in os.environ.get("NOTIFY_REGIONS", "").split(",") if r.strip()}
+
+    filtered = [
+        e for e in events
+        if (not wanted_strengths or e["strength"] in wanted_strengths)
+        and (not wanted_regions or e["region_slug"] in wanted_regions)
+    ]
+
+    if not filtered:
+        return
+
+    lines = [f"- {e['strength']} mcg at {e['name']}, {e['city']} ({e['region_name']})" for e in filtered]
+    body = (
+        "New Estradot stock found:\n\n"
+        + "\n".join(lines)
+        + "\n\nAlways confirm with the pharmacy before travelling -- stock snapshots can change quickly."
+    )
+    msg = MIMEText(body, "plain", "utf-8")
+    msg["Subject"] = f"Estradot: {len(filtered)} new stock hit(s)"
+    msg["From"] = username
+    msg["To"] = to_addr
+
+    try:
+        with smtplib.SMTP_SSL(host, port, timeout=20) as server:
+            server.login(username, password)
+            server.sendmail(username, [to_addr], msg.as_string())
+        log(f"Sent email notification ({len(filtered)} of {len(events)} event(s), after filtering) to {to_addr}.")
+    except Exception as ex:  # smtplib raises several distinct exception types; catch broadly and log
+        log(f"[!] Failed to send email notification: {ex}")
+
+
 def render_html(current, pharmacies, generated_at):
     strengths = list(PRODUCT_IDS.keys())
 
@@ -444,15 +522,12 @@ def render_html(current, pharmacies, generated_at):
     notif_panel_html = """
   <h2>Get notified</h2>
   <p class="subtitle">
-    Pick a strength and an area below, and this shows you the exact
-    <a href="https://ntfy.sh" target="_blank" rel="noopener">ntfy</a> topic
-    name(s) to subscribe to for just that combination -- no account or
-    sign-up on this site, your picks are only remembered in this browser.
+    Pick the strength(s) and area(s) you want to hear about, and this shows
+    you the two values to set as GitHub repository secrets so the tracker
+    only emails you about what you actually care about. Your picks are
+    remembered in this browser for next time.
   </p>
   <div class="notif-panel">
-    <label class="secret-label" for="baseSecret">Your personal code (any long random string -- keep it private, it's what makes these topics yours alone):</label>
-    <input id="baseSecret" type="text" placeholder="e.g. river-lamp-92-owl" autocomplete="off">
-
     <fieldset>
       <legend>Strength</legend>
       <div class="cb-grid">__STRENGTH_CHECKBOXES__</div>
@@ -466,13 +541,13 @@ def render_html(current, pharmacies, generated_at):
       <div class="cb-grid region-grid">__REGION_CHECKBOXES__</div>
     </fieldset>
 
-    <button id="generateBtn">Show my topics</button>
+    <button id="generateBtn">Show my config</button>
     <div id="topicResults"></div>
   </div>
 
   <script>
     (function() {
-      var STORAGE_KEY = "estradot_notif_prefs_v1";
+      var STORAGE_KEY = "estradot_notif_prefs_v2";
 
       function saved() {
         try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
@@ -484,8 +559,6 @@ def render_html(current, pharmacies, generated_at):
       }
 
       var prefs = saved();
-      var secretEl = document.getElementById("baseSecret");
-      if (prefs.secret) secretEl.value = prefs.secret;
 
       document.querySelectorAll(".strengthCb").forEach(function(cb) {
         if (prefs.strengths && prefs.strengths.indexOf(cb.value) !== -1) cb.checked = true;
@@ -497,46 +570,44 @@ def render_html(current, pharmacies, generated_at):
       if (prefs.allSweden) allSwedenEl.checked = true;
 
       document.getElementById("generateBtn").addEventListener("click", function() {
-        var secret = secretEl.value.trim();
         var resultsEl = document.getElementById("topicResults");
         resultsEl.innerHTML = "";
-
-        if (!secret) {
-          resultsEl.innerHTML = '<p class="warn">Enter a personal code first.</p>';
-          return;
-        }
 
         var strengths = Array.prototype.slice.call(document.querySelectorAll(".strengthCb:checked")).map(function(cb) { return cb.value; });
         var regions = Array.prototype.slice.call(document.querySelectorAll(".regionCb:checked")).map(function(cb) { return cb.value; });
         var allSweden = allSwedenEl.checked;
 
-        save({ secret: secret, strengths: strengths, regions: regions, allSweden: allSweden });
+        save({ strengths: strengths, regions: regions, allSweden: allSweden });
 
-        if (strengths.length === 0 || (!allSweden && regions.length === 0)) {
-          resultsEl.innerHTML = '<p class="warn">Pick at least one strength and at least one area (or "All of Sweden").</p>';
+        if (strengths.length === 0) {
+          resultsEl.innerHTML = '<p class="warn">Pick at least one strength.</p>';
+          return;
+        }
+        if (!allSweden && regions.length === 0) {
+          resultsEl.innerHTML = '<p class="warn">Pick at least one area, or check "All of Sweden".</p>';
           return;
         }
 
-        var topics = [];
-        strengths.forEach(function(s) {
-          if (allSweden) topics.push(secret + "-" + s + "mcg-all");
-          regions.forEach(function(r) { topics.push(secret + "-" + s + "mcg-" + r); });
-        });
+        var strengthsValue = strengths.join(",");
+        var regionsValue = allSweden ? "" : regions.join(",");
 
-        var html = '<p>Subscribe to ' + (topics.length === 1 ? "this topic" : "these topics") + ' in the ntfy app (or tap to open in browser):</p><ul class="topic-list">';
-        topics.forEach(function(t) {
-          html += '<li><code>' + t + '</code> ' +
-                  '<a href="https://ntfy.sh/' + t + '" target="_blank" rel="noopener">open</a> ' +
-                  '<button type="button" class="copyBtn" data-topic="' + t + '">copy</button></li>';
-        });
+        function row(name, value, note) {
+          return '<li><code>' + name + '</code> = <code>' + (value || "(leave blank)") + '</code> ' +
+                 '<button type="button" class="copyBtn" data-value="' + value + '">copy value</button>' +
+                 (note ? '<div class="note">' + note + '</div>' : '') + '</li>';
+        }
+
+        var html = '<p>In your repo: <strong>Settings &rarr; Secrets and variables &rarr; Actions</strong>, set these two secrets:</p><ul class="topic-list">';
+        html += row("NOTIFY_STRENGTHS", strengthsValue);
+        html += row("NOTIFY_REGIONS", regionsValue, allSweden ? "Blank means every region in Sweden." : "");
         html += '</ul>';
         resultsEl.innerHTML = html;
 
         resultsEl.querySelectorAll(".copyBtn").forEach(function(btn) {
           btn.addEventListener("click", function() {
-            navigator.clipboard.writeText(btn.getAttribute("data-topic")).then(function() {
+            navigator.clipboard.writeText(btn.getAttribute("data-value")).then(function() {
               btn.textContent = "copied!";
-              setTimeout(function() { btn.textContent = "copy"; }, 1500);
+              setTimeout(function() { btn.textContent = "copy value"; }, 1500);
             });
           });
         });
@@ -684,6 +755,7 @@ def main():
         for e in events:
             log(f"  + {e['strength']} mcg at {e['name']} ({e['city']}, {e['region_name']})")
     send_notifications(events)
+    send_email_notification(events)
 
     history = previous.get("history", [])
     for e in events:
