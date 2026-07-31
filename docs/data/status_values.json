@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5697,
+    "count": 6031,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -15,36 +15,20 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
-  "'FAILED'": {
-    "raw_value": "FAILED",
-    "count": 280,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Älvsbyn Storgatan 27",
-    "example_city": "Älvsbyn",
-    "example_strength": "25"
-  },
-  "'TIMEOUT'": {
-    "raw_value": "TIMEOUT",
-    "count": 53,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "DOZ Apotek Tidaholm Västra Drottningvägen",
-    "example_city": "Tidaholm",
-    "example_strength": "50"
-  },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 11,
+    "count": 13,
     "classified_as_in_stock": true,
-    "example_pharmacy": "Kronans Apotek Carlanderska Sjukhuset",
-    "example_city": "Göteborg",
-    "example_strength": "100"
+    "example_pharmacy": "Vikbolandet Bygdev 13 Ö.Husby",
+    "example_city": "Vikbolandet",
+    "example_strength": "25"
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 4,
+    "count": 1,
     "classified_as_in_stock": true,
-    "example_pharmacy": "Apoteket MVG",
-    "example_city": "Umeå",
+    "example_pharmacy": "Apoteket Örnen",
+    "example_city": "Lessebo",
     "example_strength": "100"
   }
 }
