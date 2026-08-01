@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 6031,
+    "count": 6032,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -17,7 +17,7 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 13,
+    "count": 12,
     "classified_as_in_stock": true,
     "example_pharmacy": "Vikbolandet Bygdev 13 Ö.Husby",
     "example_city": "Vikbolandet",
