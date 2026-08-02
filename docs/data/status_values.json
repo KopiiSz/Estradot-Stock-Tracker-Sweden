@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5827,
+    "count": 6032,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -22,14 +22,6 @@
     "example_pharmacy": "Vikbolandet Bygdev 13 Ö.Husby",
     "example_city": "Vikbolandet",
     "example_strength": "25"
-  },
-  "'FAILED'": {
-    "raw_value": "FAILED",
-    "count": 205,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Älvsbyn Storgatan 27",
-    "example_city": "Älvsbyn",
-    "example_strength": "50"
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
