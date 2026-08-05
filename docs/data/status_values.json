@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 6020,
+    "count": 5168,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -17,23 +17,23 @@
   },
   "'FAILED'": {
     "raw_value": "FAILED",
-    "count": 16,
+    "count": 867,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Apoteket Önsta-Gryta",
-    "example_city": "Västerås",
-    "example_strength": "75"
+    "example_pharmacy": "Apotek Hjärtat ICA Maxi Ängelholm",
+    "example_city": "Ängelholm",
+    "example_strength": "25"
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 8,
+    "count": 7,
     "classified_as_in_stock": true,
-    "example_pharmacy": "Kronans Apotek Gbg Johanneberg",
+    "example_pharmacy": "Kronans Apotek Carlanderska Sjukhuset",
     "example_city": "Göteborg",
     "example_strength": "100"
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 1,
+    "count": 3,
     "classified_as_in_stock": true,
     "example_pharmacy": "DOZ Apotek Strängnäs Solberga",
     "example_city": "Strängnäs",
