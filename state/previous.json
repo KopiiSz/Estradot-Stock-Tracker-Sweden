@@ -5295,7 +5295,7 @@
       "7313276004423": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000852": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276017355": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276012619": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276012619": "FEW_IN_STOCK",
       "7312527000283": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000913": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276004416": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6248,6 +6248,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-08-06 11:00",
+      "strength": "100",
+      "name": "Apoteket Kungsgatan",
+      "city": "Örebro",
+      "region": "Örebro"
+    },
+    {
       "timestamp": "2026-08-05 20:44",
       "strength": "100",
       "name": "Åmål Mellanbrogatan 3",
@@ -6849,13 +6856,7 @@
       "strength": "100",
       "name": "Kronans Apotek Ytterby",
       "city": "Ytterby"
-    },
-    {
-      "timestamp": "2026-07-28 18:29",
-      "strength": "100",
-      "name": "Apoteket Lappugglan",
-      "city": "Pajala"
     }
   ],
-  "last_run": "2026-08-05 20:44"
+  "last_run": "2026-08-06 11:00"
 }
