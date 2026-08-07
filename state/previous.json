@@ -1028,7 +1028,7 @@
       "7312446002689": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527005318": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276000982": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312446000388": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312446000388": "IN_STOCK",
       "7313276000975": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276000999": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527005257": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6248,6 +6248,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-08-07 18:01",
+      "strength": "25",
+      "name": "Skövde Elins Esplanad",
+      "city": "Skövde",
+      "region": "Jönköping"
+    },
+    {
       "timestamp": "2026-08-07 14:39",
       "strength": "37.5",
       "name": "Kronans Apotek Askim Datavägen",
@@ -6852,13 +6859,7 @@
       "strength": "100",
       "name": "Kronans Apotek Gbg Johanneberg",
       "city": "Göteborg"
-    },
-    {
-      "timestamp": "2026-07-29 15:55",
-      "strength": "100",
-      "name": "Kronans Apotek Carlanderska Sjukhuset",
-      "city": "Göteborg"
     }
   ],
-  "last_run": "2026-08-07 14:39"
+  "last_run": "2026-08-07 18:01"
 }
