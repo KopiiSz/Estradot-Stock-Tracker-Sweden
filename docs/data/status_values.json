@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5334,
+    "count": 6037,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -13,14 +13,6 @@
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Elgen",
     "example_city": "Stockholm",
-    "example_strength": "25"
-  },
-  "'FAILED'": {
-    "raw_value": "FAILED",
-    "count": 704,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Hammarö ICA Kvantum",
-    "example_city": "Hammarö",
     "example_strength": "25"
   },
   "'FEW_IN_STOCK'": {
@@ -41,7 +33,7 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 5,
+    "count": 6,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Gbg Johanneberg",
     "example_city": "Göteborg",
