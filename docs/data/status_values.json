@@ -1,9 +1,17 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 6038,
+    "count": 6033,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
+    "example_city": "Stockholm",
+    "example_strength": "25"
+  },
+  "'TIMEOUT'": {
+    "raw_value": "TIMEOUT",
+    "count": 5,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "DOZ Apotek Stockholm Centralstation",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
