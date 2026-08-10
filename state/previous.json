@@ -5073,7 +5073,7 @@
       "7312527004878": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276007400": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276009756": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312666263013": "CONTACT_STORE",
+      "7312666263013": "IN_STOCK",
       "7312527000047": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002577": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002429": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -5321,7 +5321,7 @@
       "7312527001624": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312666281017": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527001600": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527004519": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527004519": "FEW_IN_STOCK",
       "7312446000890": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002645": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276004539": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6248,6 +6248,20 @@
   },
   "history": [
     {
+      "timestamp": "2026-08-10 10:02",
+      "strength": "100",
+      "name": "Kronans Apotek Nora",
+      "city": "Nora",
+      "region": "Örebro"
+    },
+    {
+      "timestamp": "2026-08-10 10:02",
+      "strength": "100",
+      "name": "Kronans Apotek Carlanderska Sjukhuset",
+      "city": "Göteborg",
+      "region": "Västra Götaland"
+    },
+    {
       "timestamp": "2026-08-09 08:00",
       "strength": "100",
       "name": "Åmål Mellanbrogatan 3",
@@ -6849,19 +6863,7 @@
       "strength": "100",
       "name": "Apoteket Visenten EA",
       "city": "Avesta"
-    },
-    {
-      "timestamp": "2026-07-29 15:55",
-      "strength": "100",
-      "name": "Kronans Apotek Gävle Bomhus",
-      "city": "Gävle"
-    },
-    {
-      "timestamp": "2026-07-29 15:55",
-      "strength": "100",
-      "name": "Kronans Apotek Landskrona",
-      "city": "Landskrona"
     }
   ],
-  "last_run": "2026-08-09 14:18"
+  "last_run": "2026-08-10 10:02"
 }
