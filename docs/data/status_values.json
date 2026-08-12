@@ -17,10 +17,18 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 6,
+    "count": 5,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Carlanderska Sjukhuset",
     "example_city": "Göteborg",
+    "example_strength": "100"
+  },
+  "'FEW_IN_STOCK'": {
+    "raw_value": "FEW_IN_STOCK",
+    "count": 1,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "Apoteket Foxen",
+    "example_city": "Töcksfors",
     "example_strength": "100"
   }
 }
