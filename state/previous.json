@@ -5073,7 +5073,7 @@
       "7312527004878": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276007400": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276009756": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312666263013": "CONTACT_STORE",
+      "7312666263013": "IN_STOCK",
       "7312527000047": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002577": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002429": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6248,6 +6248,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-08-14 16:08",
+      "strength": "100",
+      "name": "Kronans Apotek Carlanderska Sjukhuset",
+      "city": "Göteborg",
+      "region": "Västra Götaland"
+    },
+    {
       "timestamp": "2026-08-14 12:31",
       "strength": "75",
       "name": "Apoteket Hovshaga",
@@ -6861,13 +6868,7 @@
       "strength": "100",
       "name": "Apoteket Ugglan",
       "city": "Ånge"
-    },
-    {
-      "timestamp": "2026-07-29 15:55",
-      "strength": "100",
-      "name": "Åmål Mellanbrogatan 3",
-      "city": "Åmål"
     }
   ],
-  "last_run": "2026-08-14 12:31"
+  "last_run": "2026-08-14 16:08"
 }
