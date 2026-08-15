@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 6039,
+    "count": 5065,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -13,6 +13,14 @@
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Elgen",
     "example_city": "Stockholm",
+    "example_strength": "25"
+  },
+  "'FAILED'": {
+    "raw_value": "FAILED",
+    "count": 974,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Göteborg Sannegården ICA",
+    "example_city": "Göteborg",
     "example_strength": "25"
   },
   "'FEW_IN_STOCK'": {
