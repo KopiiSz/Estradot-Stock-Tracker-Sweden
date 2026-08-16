@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5879,
+    "count": 6041,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -15,28 +15,12 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
-  "'FAILED'": {
-    "raw_value": "FAILED",
-    "count": 41,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Apoteket Havsörnen",
-    "example_city": "Örnsköldsvik",
-    "example_strength": "37.5"
-  },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
     "count": 4,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Carlanderska Sjukhuset",
     "example_city": "Göteborg",
-    "example_strength": "100"
-  },
-  "'TIMEOUT'": {
-    "raw_value": "TIMEOUT",
-    "count": 121,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Apoteket Töreboda",
-    "example_city": "Töreboda",
     "example_strength": "100"
   }
 }
