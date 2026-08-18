@@ -6054,7 +6054,7 @@
       "7312527003895": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000265": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000708": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276001828": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276001828": "FEW_IN_STOCK",
       "7312527002799": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003556": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276001743": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6242,6 +6242,13 @@
     }
   },
   "history": [
+    {
+      "timestamp": "2026-08-18 20:59",
+      "strength": "100",
+      "name": "Apoteket Lejonet",
+      "city": "Oskarshamn",
+      "region": "Kalmar"
+    },
     {
       "timestamp": "2026-08-18 08:03",
       "strength": "100",
@@ -6862,13 +6869,7 @@
       "strength": "100",
       "name": "Lit Hälsocentralen",
       "city": "Lit"
-    },
-    {
-      "timestamp": "2026-07-29 15:55",
-      "strength": "100",
-      "name": "Östersund ICA Kvantum",
-      "city": "Östersund"
     }
   ],
-  "last_run": "2026-08-18 14:08"
+  "last_run": "2026-08-18 20:59"
 }
