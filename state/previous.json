@@ -6120,7 +6120,7 @@
       "7312446001743": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276008346": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527005066": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276006182": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276006182": "FEW_IN_STOCK",
       "7313276006151": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004717": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276006281": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6237,6 +6237,13 @@
     }
   },
   "history": [
+    {
+      "timestamp": "2026-08-24 14:27",
+      "strength": "100",
+      "name": "Apoteket Laxen",
+      "city": "Boden",
+      "region": "Norrbotten"
+    },
     {
       "timestamp": "2026-08-21 08:08",
       "strength": "100",
@@ -6862,13 +6869,7 @@
       "strength": "100",
       "name": "Apotek Hjärtat ICA Maxi Borlänge",
       "city": "Borlänge"
-    },
-    {
-      "timestamp": "2026-07-29 15:55",
-      "strength": "100",
-      "name": "Apoteket Björken",
-      "city": "Hoting"
     }
   ],
-  "last_run": "2026-08-24 12:01"
+  "last_run": "2026-08-24 14:27"
 }
