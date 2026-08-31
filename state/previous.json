@@ -5313,7 +5313,7 @@
       "7312527001624": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312666281017": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527001600": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527004519": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527004519": "FEW_IN_STOCK",
       "7312446000890": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002645": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276004539": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -5826,7 +5826,7 @@
       "7313276008131": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446004515": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527001471": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312666265017": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312666265017": "CONTACT_STORE",
       "7313276005031": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527003901": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527001617": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6237,6 +6237,13 @@
     }
   },
   "history": [
+    {
+      "timestamp": "2026-08-31 20:49",
+      "strength": "100",
+      "name": "Kronans Apotek Nora",
+      "city": "Nora",
+      "region": "Örebro"
+    },
     {
       "timestamp": "2026-08-24 14:27",
       "strength": "100",
@@ -6863,13 +6870,7 @@
       "strength": "100",
       "name": "Apoteket Kupolen",
       "city": "Borlänge"
-    },
-    {
-      "timestamp": "2026-07-29 15:55",
-      "strength": "100",
-      "name": "Apotek Hjärtat ICA Maxi Borlänge",
-      "city": "Borlänge"
     }
   ],
-  "last_run": "2026-08-30 18:37"
+  "last_run": "2026-08-31 20:49"
 }
