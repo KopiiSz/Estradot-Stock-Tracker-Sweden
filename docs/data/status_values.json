@@ -17,18 +17,10 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 1,
+    "count": 2,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Elisedal",
     "example_city": "Göteborg",
-    "example_strength": "100"
-  },
-  "'FEW_IN_STOCK'": {
-    "raw_value": "FEW_IN_STOCK",
-    "count": 1,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Kronans Apotek Nora",
-    "example_city": "Nora",
     "example_strength": "100"
   },
   "'CONTACT_STORE'": {
