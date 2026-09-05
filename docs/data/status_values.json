@@ -1,9 +1,17 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 6039,
+    "count": 5715,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
+    "example_city": "Stockholm",
+    "example_strength": "25"
+  },
+  "'STALE_DATA'": {
+    "raw_value": "STALE_DATA",
+    "count": 290,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "DOZ Apotek Stockholm Centralstation",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
@@ -14,6 +22,14 @@
     "example_pharmacy": "Apoteket Elgen",
     "example_city": "Stockholm",
     "example_strength": "25"
+  },
+  "'NOT_ON_MARKET'": {
+    "raw_value": "NOT_ON_MARKET",
+    "count": 29,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Kronans Apotek Sthlm S. Stn.",
+    "example_city": "Stockholm",
+    "example_strength": "50"
   },
   "'CONTACT_STORE'": {
     "raw_value": "CONTACT_STORE",
