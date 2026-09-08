@@ -2508,7 +2508,7 @@
       "7313276002856": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276009480": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000054": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276002962": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276002962": "FEW_IN_STOCK",
       "7312527000146": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276008995": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000030": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6238,6 +6238,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-09-08 18:37",
+      "strength": "50",
+      "name": "Apoteket Storken",
+      "city": "Stockholm",
+      "region": "Stockholm"
+    },
+    {
       "timestamp": "2026-09-01 21:00",
       "strength": "100",
       "name": "Kronans Apotek Elisedal",
@@ -6866,13 +6873,7 @@
       "strength": "100",
       "name": "Grängesberg Örabergsvägen 5",
       "city": "Grängesberg"
-    },
-    {
-      "timestamp": "2026-07-29 15:55",
-      "strength": "100",
-      "name": "Ludvika ICA Kvantum",
-      "city": "Ludvika"
     }
   ],
-  "last_run": "2026-09-08 14:30"
+  "last_run": "2026-09-08 18:37"
 }
