@@ -15,14 +15,6 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
-  "'TIMEOUT'": {
-    "raw_value": "TIMEOUT",
-    "count": 1,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Hallunda Centrum",
-    "example_city": "Norsborg",
-    "example_strength": "25"
-  },
   "'NOT_ON_MARKET'": {
     "raw_value": "NOT_ON_MARKET",
     "count": 29,
@@ -37,6 +29,14 @@
     "classified_as_in_stock": false,
     "example_pharmacy": "Kronans Apotek Elisedal",
     "example_city": "Göteborg",
+    "example_strength": "100"
+  },
+  "'FEW_IN_STOCK'": {
+    "raw_value": "FEW_IN_STOCK",
+    "count": 1,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "Apoteket Foxen",
+    "example_city": "Töcksfors",
     "example_strength": "100"
   }
 }

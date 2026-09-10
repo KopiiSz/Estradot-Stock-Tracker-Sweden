@@ -715,7 +715,7 @@
       "7350095060018": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003143": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276016198": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312446002627": "TIMEOUT",
+      "7312446002627": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7309861015936": "NO_SERVICE",
       "7300009071210": "NO_SERVICE",
       "7312446004942": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6230,7 +6230,7 @@
       "7312527004816": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000634": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000395": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276006779": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276006779": "FEW_IN_STOCK",
       "7312446000289": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276017805": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002362": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6242,6 +6242,13 @@
     }
   },
   "history": [
+    {
+      "timestamp": "2026-09-10 14:24",
+      "strength": "100",
+      "name": "Apoteket Foxen",
+      "city": "Töcksfors",
+      "region": "Värmland"
+    },
     {
       "timestamp": "2026-09-08 18:37",
       "strength": "50",
@@ -6872,13 +6879,7 @@
       "strength": "100",
       "name": "Fagersta Bergslagssjukhuset",
       "city": "Fagersta"
-    },
-    {
-      "timestamp": "2026-07-29 15:55",
-      "strength": "100",
-      "name": "Grängesberg Örabergsvägen 5",
-      "city": "Grängesberg"
     }
   ],
-  "last_run": "2026-09-10 04:45"
+  "last_run": "2026-09-10 14:24"
 }
