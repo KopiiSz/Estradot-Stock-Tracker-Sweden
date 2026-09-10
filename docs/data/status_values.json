@@ -31,12 +31,12 @@
     "example_city": "Göteborg",
     "example_strength": "100"
   },
-  "'FEW_IN_STOCK'": {
-    "raw_value": "FEW_IN_STOCK",
+  "'TIMEOUT'": {
+    "raw_value": "TIMEOUT",
     "count": 1,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Apoteket Foxen",
-    "example_city": "Töcksfors",
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Vimmerby Norrtullsgatan 5",
+    "example_city": "Vimmerby",
     "example_strength": "100"
   }
 }
