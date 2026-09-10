@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 6005,
+    "count": 6004,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -9,10 +9,18 @@
   },
   "'NO_SERVICE'": {
     "raw_value": "NO_SERVICE",
-    "count": 190,
+    "count": 195,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Apoteket Elgen",
+    "example_pharmacy": "Östermalms apotek",
     "example_city": "Stockholm",
+    "example_strength": "25"
+  },
+  "'TIMEOUT'": {
+    "raw_value": "TIMEOUT",
+    "count": 1,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Hallunda Centrum",
+    "example_city": "Norsborg",
     "example_strength": "25"
   },
   "'NOT_ON_MARKET'": {
