@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 6009,
+    "count": 6008,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -13,6 +13,14 @@
     "classified_as_in_stock": false,
     "example_pharmacy": "Östermalms apotek",
     "example_city": "Stockholm",
+    "example_strength": "25"
+  },
+  "'TIMEOUT'": {
+    "raw_value": "TIMEOUT",
+    "count": 1,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Apotek Hjärtat Ica Maxi Älmhult",
+    "example_city": "Älmhult",
     "example_strength": "25"
   },
   "'IN_STOCK'": {
