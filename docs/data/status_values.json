@@ -1,7 +1,7 @@
 {
-  "'NOT_IN_STOCK_SHORTAGE_INFO'": {
-    "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 6005,
+  "'NOT_IN_STOCK'": {
+    "raw_value": "NOT_IN_STOCK",
+    "count": 1208,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -15,17 +15,17 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
-  "'TIMEOUT'": {
-    "raw_value": "TIMEOUT",
-    "count": 4,
+  "'NOT_IN_STOCK_SHORTAGE_INFO'": {
+    "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
+    "count": 4744,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Tierp Centralgatan 17",
-    "example_city": "Tierp",
-    "example_strength": "25"
+    "example_pharmacy": "Apoteket C W Scheele",
+    "example_city": "Stockholm",
+    "example_strength": "37.5"
   },
   "'NOT_ON_MARKET'": {
     "raw_value": "NOT_ON_MARKET",
-    "count": 29,
+    "count": 27,
     "classified_as_in_stock": false,
     "example_pharmacy": "Kronans Apotek Sthlm S. Stn.",
     "example_city": "Stockholm",
@@ -33,11 +33,19 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 1,
+    "count": 47,
     "classified_as_in_stock": true,
-    "example_pharmacy": "Göteborg Focus Gårda Affärscen",
-    "example_city": "Göteborg",
-    "example_strength": "100"
+    "example_pharmacy": "Göteborg ICA Kvantum Bäckebol",
+    "example_city": "Hisings Backa",
+    "example_strength": "50"
+  },
+  "'FEW_IN_STOCK'": {
+    "raw_value": "FEW_IN_STOCK",
+    "count": 13,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "Apoteket Kungsgatan Uppsala",
+    "example_city": "Uppsala",
+    "example_strength": "50"
   },
   "'CONTACT_STORE'": {
     "raw_value": "CONTACT_STORE",
