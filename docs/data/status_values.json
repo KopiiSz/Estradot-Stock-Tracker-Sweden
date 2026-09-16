@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 1208,
+    "count": 2416,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -17,11 +17,11 @@
   },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 4710,
+    "count": 3502,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
-    "example_strength": "37.5"
+    "example_strength": "50"
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
