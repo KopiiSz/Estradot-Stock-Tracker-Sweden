@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 1208,
+    "count": 1207,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -15,36 +15,28 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
+  "'IN_STOCK'": {
+    "raw_value": "IN_STOCK",
+    "count": 134,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "Karlskoga ICA Maxi",
+    "example_city": "Karlskoga",
+    "example_strength": "25"
+  },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 4744,
+    "count": 4678,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
     "example_strength": "37.5"
   },
-  "'NOT_ON_MARKET'": {
-    "raw_value": "NOT_ON_MARKET",
-    "count": 27,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Kronans Apotek Sthlm S. Stn.",
-    "example_city": "Stockholm",
-    "example_strength": "50"
-  },
-  "'IN_STOCK'": {
-    "raw_value": "IN_STOCK",
-    "count": 47,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Göteborg ICA Kvantum Bäckebol",
-    "example_city": "Hisings Backa",
-    "example_strength": "50"
-  },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 13,
+    "count": 20,
     "classified_as_in_stock": true,
-    "example_pharmacy": "Apoteket Kungsgatan Uppsala",
-    "example_city": "Uppsala",
+    "example_pharmacy": "DOZ Apotek Malmö Stadion",
+    "example_city": "Malmö",
     "example_strength": "50"
   },
   "'CONTACT_STORE'": {
