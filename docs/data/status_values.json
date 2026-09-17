@@ -17,7 +17,7 @@
   },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 3502,
+    "count": 3492,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -25,26 +25,18 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 103,
+    "count": 117,
     "classified_as_in_stock": true,
-    "example_pharmacy": "Stockholm Skanstull",
+    "example_pharmacy": "Apoteket Biet",
     "example_city": "Stockholm",
     "example_strength": "50"
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 18,
+    "count": 15,
     "classified_as_in_stock": true,
-    "example_pharmacy": "DOZ Apotek Malmö Stadion",
+    "example_pharmacy": "Apoteket Gripen",
     "example_city": "Malmö",
     "example_strength": "50"
-  },
-  "'CONTACT_STORE'": {
-    "raw_value": "CONTACT_STORE",
-    "count": 1,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Kronans Apotek Elisedal",
-    "example_city": "Göteborg",
-    "example_strength": "100"
   }
 }
