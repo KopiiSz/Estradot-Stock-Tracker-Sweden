@@ -17,7 +17,7 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 139,
+    "count": 135,
     "classified_as_in_stock": true,
     "example_pharmacy": "Stockholm Fältöversten",
     "example_city": "Stockholm",
@@ -25,7 +25,7 @@
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 19,
+    "count": 20,
     "classified_as_in_stock": true,
     "example_pharmacy": "Apoteket Lillsidan",
     "example_city": "Enköping",
@@ -33,7 +33,7 @@
   },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 3487,
+    "count": 3490,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
