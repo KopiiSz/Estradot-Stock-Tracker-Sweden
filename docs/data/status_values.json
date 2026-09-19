@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 2319,
+    "count": 2324,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -15,22 +15,6 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
-  "'TIMEOUT'": {
-    "raw_value": "TIMEOUT",
-    "count": 2,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Västra Frölunda Torg (Ny del)",
-    "example_city": "Västra Frölunda",
-    "example_strength": "25"
-  },
-  "'IN_STOCK'": {
-    "raw_value": "IN_STOCK",
-    "count": 188,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Uppsala Norra Gränbystaden",
-    "example_city": "Uppsala",
-    "example_strength": "25"
-  },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
     "count": 31,
@@ -39,9 +23,17 @@
     "example_city": "Enköping",
     "example_strength": "25"
   },
+  "'IN_STOCK'": {
+    "raw_value": "IN_STOCK",
+    "count": 184,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "Hallstahammar Hammartorget 10",
+    "example_city": "Hallstahammar",
+    "example_strength": "25"
+  },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 3499,
+    "count": 3500,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",

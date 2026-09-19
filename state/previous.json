@@ -112,7 +112,7 @@
       "7312666043011": "NOT_IN_STOCK",
       "7312446004706": "NOT_IN_STOCK",
       "7312527002485": "NOT_IN_STOCK",
-      "7312446002443": "TIMEOUT",
+      "7312446002443": "NOT_IN_STOCK",
       "7312446002719": "NOT_IN_STOCK",
       "7313276007530": "NOT_IN_STOCK",
       "7312527000344": "NOT_IN_STOCK",
@@ -207,7 +207,7 @@
       "7312527003499": "NOT_IN_STOCK",
       "7313276013074": "NOT_IN_STOCK",
       "7312527005080": "NOT_IN_STOCK",
-      "7312446004188": "IN_STOCK",
+      "7312446004188": "NOT_IN_STOCK",
       "7312527002508": "NOT_IN_STOCK",
       "7312446003679": "NOT_IN_STOCK",
       "7312446003662": "NOT_IN_STOCK",
@@ -259,7 +259,7 @@
       "7313276009008": "NOT_IN_STOCK",
       "7312446003723": "NOT_IN_STOCK",
       "7313276018567": "NOT_IN_STOCK",
-      "7312446003716": "IN_STOCK",
+      "7312446003716": "NOT_IN_STOCK",
       "7312527002270": "NOT_IN_STOCK",
       "7312446002351": "NOT_IN_STOCK",
       "7312527002812": "NOT_IN_STOCK",
@@ -270,7 +270,7 @@
       "7313276000821": "NOT_IN_STOCK",
       "7312446003167": "IN_STOCK",
       "7312666261019": "NOT_IN_STOCK",
-      "7312446004850": "IN_STOCK",
+      "7312446004850": "NOT_IN_STOCK",
       "7312527002249": "IN_STOCK",
       "7312446000647": "NOT_IN_STOCK",
       "7350051480010": "NOT_IN_STOCK",
@@ -425,7 +425,7 @@
       "7312446002306": "NOT_IN_STOCK",
       "7313276002252": "NOT_IN_STOCK",
       "7312527002935": "NOT_IN_STOCK",
-      "7312446003822": "NOT_IN_STOCK",
+      "7312446003822": "IN_STOCK",
       "7313276013395": "NOT_IN_STOCK",
       "7312527004267": "NOT_IN_STOCK",
       "7312446003303": "NOT_IN_STOCK",
@@ -449,7 +449,7 @@
       "7312446004751": "NOT_IN_STOCK",
       "7313276008056": "NOT_IN_STOCK",
       "7312527001341": "NOT_IN_STOCK",
-      "7312446003457": "IN_STOCK",
+      "7312446003457": "NOT_IN_STOCK",
       "7313276016754": "NOT_IN_STOCK",
       "7312527060003": "NOT_IN_STOCK",
       "7312527003796": "NOT_IN_STOCK",
@@ -765,7 +765,7 @@
       "7313276007813": "NOT_IN_STOCK",
       "7312446000340": "NOT_IN_STOCK",
       "7312446003228": "NOT_IN_STOCK",
-      "7312446003211": "IN_STOCK",
+      "7312446003211": "NOT_IN_STOCK",
       "7313276007790": "NOT_IN_STOCK",
       "7350051481413": "NOT_IN_STOCK",
       "7312527002263": "NOT_IN_STOCK",
@@ -5651,7 +5651,7 @@
       "7313276018000": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000498": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000364": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312446003136": "TIMEOUT",
+      "7312446003136": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051480171": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276012640": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276001736": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6247,6 +6247,13 @@
     }
   },
   "history": [
+    {
+      "timestamp": "2026-09-19 20:36",
+      "strength": "25",
+      "name": "Hyllinge ICA Maxi",
+      "city": "Hyllinge",
+      "region": "Skåne"
+    },
     {
       "timestamp": "2026-09-19 14:22",
       "strength": "50",
@@ -6939,14 +6946,7 @@
       "name": "Västerås Erikslund ICA Maxi",
       "city": "Västerås",
       "region": "Västmanland"
-    },
-    {
-      "timestamp": "2026-09-19 10:54",
-      "strength": "25",
-      "name": "Apotek Hjärtat ICA Maxi Gunnesbo Lund",
-      "city": "Lund",
-      "region": "Skåne"
     }
   ],
-  "last_run": "2026-09-19 14:22"
+  "last_run": "2026-09-19 20:36"
 }
