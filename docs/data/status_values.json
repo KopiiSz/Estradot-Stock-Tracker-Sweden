@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 2394,
+    "count": 2309,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -15,25 +15,25 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
-  "'IN_STOCK'": {
-    "raw_value": "IN_STOCK",
-    "count": 135,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Stockholm Fältöversten",
-    "example_city": "Stockholm",
-    "example_strength": "25"
-  },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 20,
+    "count": 34,
     "classified_as_in_stock": true,
-    "example_pharmacy": "Apoteket Lillsidan",
-    "example_city": "Enköping",
+    "example_pharmacy": "DOZ Apotek Malmö Stadion",
+    "example_city": "Malmö",
+    "example_strength": "25"
+  },
+  "'IN_STOCK'": {
+    "raw_value": "IN_STOCK",
+    "count": 199,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "Apotek Hjärtat ICA Maxi Gunnesbo Lund",
+    "example_city": "Lund",
     "example_strength": "25"
   },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 3490,
+    "count": 3497,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
