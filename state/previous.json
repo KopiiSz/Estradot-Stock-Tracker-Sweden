@@ -1527,7 +1527,7 @@
       "7313276012732": "NOT_IN_STOCK",
       "7312527000245": "NOT_IN_STOCK",
       "7312446003938": "NOT_IN_STOCK",
-      "7312446000616": "TIMEOUT",
+      "7312446000616": "IN_STOCK",
       "7313276003235": "NOT_IN_STOCK",
       "7313276004294": "NOT_IN_STOCK",
       "7350051480362": "NOT_IN_STOCK",
@@ -3426,7 +3426,7 @@
       "7313276005109": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7300009028214": "NO_SERVICE",
       "7350051481758": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312446004805": "IN_STOCK",
+      "7312446004805": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000511": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003655": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002614": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6248,6 +6248,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-09-20 18:45",
+      "strength": "37.5",
+      "name": "Apotek Hjärtat ICA Supermarket Stenby",
+      "city": "Eskilstuna",
+      "region": "Västmanland"
+    },
+    {
       "timestamp": "2026-09-20 16:01",
       "strength": "50",
       "name": "Apotek Hjärtat ICA Maxi Västervik",
@@ -6939,14 +6946,7 @@
       "name": "Kronans Apotek Höllviken",
       "city": "Höllviken",
       "region": "Skåne"
-    },
-    {
-      "timestamp": "2026-09-19 10:54",
-      "strength": "25",
-      "name": "Trosa, ICA Kvantum",
-      "city": "Trosa",
-      "region": "Södermanland"
     }
   ],
-  "last_run": "2026-09-20 16:01"
+  "last_run": "2026-09-20 18:45"
 }
