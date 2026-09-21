@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 2340,
+    "count": 2342,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -25,11 +25,19 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 161,
+    "count": 158,
     "classified_as_in_stock": true,
     "example_pharmacy": "Hallstahammar Hammartorget 10",
     "example_city": "Hallstahammar",
     "example_strength": "25"
+  },
+  "'TIMEOUT'": {
+    "raw_value": "TIMEOUT",
+    "count": 1,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Sala Sala Torg",
+    "example_city": "Sala",
+    "example_strength": "37.5"
   },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
