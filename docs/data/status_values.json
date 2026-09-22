@@ -1,7 +1,7 @@
 {
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 324,
+    "count": 327,
     "classified_as_in_stock": true,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -9,7 +9,7 @@
   },
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 3241,
+    "count": 3237,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
@@ -25,7 +25,7 @@
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 55,
+    "count": 56,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Sthlm Odeng.",
     "example_city": "Stockholm",
