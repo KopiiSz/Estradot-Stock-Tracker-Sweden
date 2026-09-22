@@ -1,17 +1,17 @@
 {
-  "'NOT_IN_STOCK'": {
-    "raw_value": "NOT_IN_STOCK",
-    "count": 2246,
-    "classified_as_in_stock": false,
+  "'IN_STOCK'": {
+    "raw_value": "IN_STOCK",
+    "count": 261,
+    "classified_as_in_stock": true,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
-  "'IN_STOCK'": {
-    "raw_value": "IN_STOCK",
-    "count": 237,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Kronans Apotek Stockholm Drottninggatan",
+  "'NOT_IN_STOCK'": {
+    "raw_value": "NOT_IN_STOCK",
+    "count": 3312,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
@@ -25,9 +25,9 @@
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 42,
+    "count": 48,
     "classified_as_in_stock": true,
-    "example_pharmacy": "Kronans Apotek Kungsholmstorg",
+    "example_pharmacy": "Kronans Apotek Sthlm Odeng.",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
@@ -35,16 +35,24 @@
     "raw_value": "CONTACT_STORE",
     "count": 3,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Kronans Apotek Stenungsund",
-    "example_city": "Stenungsund",
+    "example_pharmacy": "Kronans Apotek Stockholm Gärdet",
+    "example_city": "Stockholm",
+    "example_strength": "37.5"
+  },
+  "'TIMEOUT'": {
+    "raw_value": "TIMEOUT",
+    "count": 1,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Nynäshamn",
+    "example_city": "Nynäshamn",
     "example_strength": "37.5"
   },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 3512,
+    "count": 2415,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
-    "example_strength": "50"
+    "example_strength": "75"
   }
 }
