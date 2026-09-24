@@ -1,7 +1,7 @@
 {
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 255,
+    "count": 266,
     "classified_as_in_stock": true,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -9,17 +9,9 @@
   },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 4602,
+    "count": 4660,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
-    "example_city": "Stockholm",
-    "example_strength": "25"
-  },
-  "'FEW_IN_STOCK'": {
-    "raw_value": "FEW_IN_STOCK",
-    "count": 52,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Apoteket Elefanten",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
@@ -31,27 +23,27 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
+  "'FEW_IN_STOCK'": {
+    "raw_value": "FEW_IN_STOCK",
+    "count": 34,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "Kronans Apotek Renstiernas g.",
+    "example_city": "Stockholm",
+    "example_strength": "25"
+  },
   "'CONTACT_STORE'": {
     "raw_value": "CONTACT_STORE",
-    "count": 5,
+    "count": 7,
     "classified_as_in_stock": false,
     "example_pharmacy": "Kronans Apotek Hammarby Sjöst.",
     "example_city": "STOCKHOLM",
     "example_strength": "25"
   },
-  "'TIMEOUT'": {
-    "raw_value": "TIMEOUT",
-    "count": 3,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Karlskrona Blekingesjukhuset",
-    "example_city": "Karlskrona",
-    "example_strength": "25"
-  },
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 1123,
+    "count": 1073,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Apoteket C W Scheele",
+    "example_pharmacy": "Apoteket PK-huset",
     "example_city": "Stockholm",
     "example_strength": "50"
   }
