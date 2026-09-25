@@ -348,7 +348,7 @@
       "7312446002894": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003976": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527001655": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527003963": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527003963": "FEW_IN_STOCK",
       "7313276012558": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004007": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002160": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -417,7 +417,7 @@
       "7312446000210": "IN_STOCK",
       "7313276016815": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000197": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312446003242": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312446003242": "IN_STOCK",
       "7313276002375": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003259": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051480218": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -1690,7 +1690,7 @@
       "7350051481772": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446004171": "IN_STOCK",
       "7312527003161": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312446003747": "IN_STOCK",
+      "7312446003747": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276003044": "IN_STOCK",
       "7350051481147": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276003136": "FEW_IN_STOCK",
@@ -6248,6 +6248,20 @@
   },
   "history": [
     {
+      "timestamp": "2026-09-25 22:17",
+      "strength": "25",
+      "name": "Apotek Hjärtat ICA Maxi Berga Helsingborg",
+      "city": "Helsingborg",
+      "region": "Skåne"
+    },
+    {
+      "timestamp": "2026-09-25 22:17",
+      "strength": "25",
+      "name": "Kronans Apotek Stora Torget",
+      "city": "Linköping",
+      "region": "Östergötland"
+    },
+    {
       "timestamp": "2026-09-25 18:33",
       "strength": "50",
       "name": "Apoteket Foxen",
@@ -6932,21 +6946,7 @@
       "name": "Livli Linköping",
       "city": "Linköping",
       "region": "Östergötland"
-    },
-    {
-      "timestamp": "2026-09-25 18:33",
-      "strength": "50",
-      "name": "Linköping Universitetssjukhuset SÖDRA",
-      "city": "Linköping",
-      "region": "Östergötland"
-    },
-    {
-      "timestamp": "2026-09-25 18:33",
-      "strength": "50",
-      "name": "Linköping Universitetssjukhuset NORRA",
-      "city": "Linköping",
-      "region": "Östergötland"
     }
   ],
-  "last_run": "2026-09-25 18:33"
+  "last_run": "2026-09-25 22:17"
 }
