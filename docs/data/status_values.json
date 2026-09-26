@@ -1,7 +1,7 @@
 {
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 338,
+    "count": 314,
     "classified_as_in_stock": true,
     "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
@@ -9,7 +9,7 @@
   },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 4697,
+    "count": 4711,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
@@ -25,7 +25,7 @@
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 47,
+    "count": 44,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Hammarby Sjöst.",
     "example_city": "STOCKHOLM",
@@ -33,15 +33,15 @@
   },
   "'CONTACT_STORE'": {
     "raw_value": "CONTACT_STORE",
-    "count": 6,
+    "count": 8,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Kronans Apotek Mora Skålmyrsv.",
-    "example_city": "MORA",
+    "example_pharmacy": "Kronans Apotek Elisedal",
+    "example_city": "Göteborg",
     "example_strength": "25"
   },
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 952,
+    "count": 963,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket PK-huset",
     "example_city": "Stockholm",
