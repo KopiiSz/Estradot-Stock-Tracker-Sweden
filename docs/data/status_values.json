@@ -9,7 +9,7 @@
   },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 4711,
+    "count": 4712,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
@@ -41,7 +41,7 @@
   },
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 963,
+    "count": 962,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket PK-huset",
     "example_city": "Stockholm",
