@@ -1,7 +1,7 @@
 {
-  "'NOT_IN_STOCK_SHORTAGE_INFO'": {
-    "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 3573,
+  "'NOT_IN_STOCK'": {
+    "raw_value": "NOT_IN_STOCK",
+    "count": 3077,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
@@ -9,7 +9,7 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 295,
+    "count": 521,
     "classified_as_in_stock": true,
     "example_pharmacy": "Apoteket Sergel",
     "example_city": "Stockholm",
@@ -33,18 +33,18 @@
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 36,
+    "count": 44,
     "classified_as_in_stock": true,
-    "example_pharmacy": "DOZ Apotek Uppsala Bolandcity",
-    "example_city": "Uppsala",
+    "example_pharmacy": "Kronans Apotek Hjärup",
+    "example_city": "HJÄRUP",
     "example_strength": "25"
   },
-  "'NOT_IN_STOCK'": {
-    "raw_value": "NOT_IN_STOCK",
-    "count": 2132,
+  "'NOT_IN_STOCK_SHORTAGE_INFO'": {
+    "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
+    "count": 2394,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Stockholm Åhléns City",
+    "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
-    "example_strength": "50"
+    "example_strength": "37.5"
   }
 }
