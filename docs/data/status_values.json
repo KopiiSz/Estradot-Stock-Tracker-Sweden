@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 1870,
+    "count": 1766,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
@@ -9,17 +9,9 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 523,
+    "count": 622,
     "classified_as_in_stock": true,
     "example_pharmacy": "Apoteket Sergel",
-    "example_city": "Stockholm",
-    "example_strength": "25"
-  },
-  "'FEW_IN_STOCK'": {
-    "raw_value": "FEW_IN_STOCK",
-    "count": 41,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Apoteket C W Scheele",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
@@ -39,9 +31,17 @@
     "example_city": "STOCKHOLM",
     "example_strength": "25"
   },
+  "'FEW_IN_STOCK'": {
+    "raw_value": "FEW_IN_STOCK",
+    "count": 43,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "Kronans Apotek Hjärup",
+    "example_city": "HJÄRUP",
+    "example_strength": "25"
+  },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 3602,
+    "count": 3605,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
