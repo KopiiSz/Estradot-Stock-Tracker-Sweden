@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK'": {
     "raw_value": "NOT_IN_STOCK",
-    "count": 1785,
+    "count": 1191,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
@@ -17,7 +17,7 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 599,
+    "count": 606,
     "classified_as_in_stock": true,
     "example_pharmacy": "Apoteket Falken",
     "example_city": "Stockholm",
@@ -33,18 +33,26 @@
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 42,
+    "count": 39,
     "classified_as_in_stock": true,
-    "example_pharmacy": "Kronans Apotek Hjärup",
-    "example_city": "HJÄRUP",
+    "example_pharmacy": "Apoteket Boländerna",
+    "example_city": "Uppsala",
     "example_strength": "25"
   },
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 3610,
+    "count": 4199,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
     "example_strength": "37.5"
+  },
+  "'TIMEOUT'": {
+    "raw_value": "TIMEOUT",
+    "count": 1,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Hallstahammar Hammartorget 10",
+    "example_city": "Hallstahammar",
+    "example_strength": "75"
   }
 }
