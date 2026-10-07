@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 3730,
+    "count": 5300,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
@@ -9,17 +9,9 @@
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 37,
+    "count": 30,
     "classified_as_in_stock": true,
     "example_pharmacy": "Apoteket Sergel",
-    "example_city": "Stockholm",
-    "example_strength": "25"
-  },
-  "'TIMEOUT'": {
-    "raw_value": "TIMEOUT",
-    "count": 1667,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Stockholm Åhléns City",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
@@ -33,26 +25,18 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 476,
+    "count": 704,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Carlanderska Sjukhuset",
     "example_city": "Göteborg",
     "example_strength": "25"
   },
-  "'FAILED'": {
-    "raw_value": "FAILED",
-    "count": 128,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Livli Linköping",
-    "example_city": "Linköping",
-    "example_strength": "25"
-  },
   "'CONTACT_STORE'": {
     "raw_value": "CONTACT_STORE",
-    "count": 2,
+    "count": 1,
     "classified_as_in_stock": false,
-    "example_pharmacy": "Kronans Apotek Borrby",
-    "example_city": "Borrby",
-    "example_strength": "50"
+    "example_pharmacy": "Kronans Apotek Elisedal",
+    "example_city": "Göteborg",
+    "example_strength": "100"
   }
 }
