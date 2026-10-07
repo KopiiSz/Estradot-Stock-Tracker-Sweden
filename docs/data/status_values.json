@@ -1,17 +1,9 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5300,
+    "count": 5304,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
-    "example_city": "Stockholm",
-    "example_strength": "25"
-  },
-  "'FEW_IN_STOCK'": {
-    "raw_value": "FEW_IN_STOCK",
-    "count": 30,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Apoteket Sergel",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
@@ -25,11 +17,19 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 704,
+    "count": 706,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Carlanderska Sjukhuset",
     "example_city": "Göteborg",
     "example_strength": "25"
+  },
+  "'FEW_IN_STOCK'": {
+    "raw_value": "FEW_IN_STOCK",
+    "count": 24,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "Kronans Apotek Gävle Bomhus",
+    "example_city": "Gävle",
+    "example_strength": "37.5"
   },
   "'CONTACT_STORE'": {
     "raw_value": "CONTACT_STORE",
