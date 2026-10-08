@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08 16:26",
+  "generated_at": "2026-10-08 22:02",
   "pharmacies_checked": 1246,
   "stock": {
     "25": {
@@ -3287,7 +3287,7 @@
       "7313276007721": "IN_STOCK",
       "7312527005189": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000474": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527005073": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527005073": "FEW_IN_STOCK",
       "7313276017973": "IN_STOCK",
       "7312446003686": "IN_STOCK",
       "7312527004113": "FEW_IN_STOCK",
