@@ -27,7 +27,7 @@
       "7312446004454": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002955": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002566": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276016457": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276016457": "FEW_IN_STOCK",
       "7312446002740": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051480508": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276018390": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -75,7 +75,7 @@
       "7313276016563": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000319": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004878": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276007400": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276007400": "FEW_IN_STOCK",
       "7313276009756": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312666263013": "IN_STOCK",
       "7312527000047": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -1234,7 +1234,7 @@
       "7313276007189": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003648": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276009671": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527000719": "IN_STOCK",
+      "7312527000719": "FEW_IN_STOCK",
       "7312527004816": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000634": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000395": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2699,7 +2699,7 @@
       "7312446001637": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527001419": "IN_STOCK",
       "7312527003598": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7350051481055": "IN_STOCK",
+      "7350051481055": "FEW_IN_STOCK",
       "7312527003499": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276013074": "IN_STOCK",
       "7312527005080": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2749,7 +2749,7 @@
       "7350051481222": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000906": "IN_STOCK",
       "7312446004522": "IN_STOCK",
-      "7312527000306": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527000306": "IN_STOCK",
       "7300009072811": "NO_SERVICE",
       "7312527000276": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276009008": "IN_STOCK",
@@ -2800,8 +2800,8 @@
       "7312446000913": "IN_STOCK",
       "7313276004416": "IN_STOCK",
       "7312527003055": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312666271018": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7350051481345": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312666271018": "FEW_IN_STOCK",
+      "7350051481345": "IN_STOCK",
       "7300009082841": "NO_SERVICE",
       "7312527004489": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527005332": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2822,7 +2822,7 @@
       "7312666281017": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527001600": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004519": "IN_STOCK",
-      "7312446000890": "IN_STOCK",
+      "7312446000890": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002645": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276004539": "IN_STOCK",
       "7313276013562": "IN_STOCK",
@@ -2832,7 +2832,7 @@
       "7312527004021": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000883": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004496": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312446000920": "IN_STOCK",
+      "7312446000920": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004618": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003372": "IN_STOCK",
       "7313276013463": "IN_STOCK",
@@ -2918,7 +2918,7 @@
       "7312446003259": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051480218": "FEW_IN_STOCK",
       "7313276002351": "IN_STOCK",
-      "7312446002306": "IN_STOCK",
+      "7312446002306": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276002252": "IN_STOCK",
       "7312527002935": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003822": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3370,7 +3370,7 @@
       "7312446001057": "IN_STOCK",
       "7312527002706": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446001064": "IN_STOCK",
-      "7312527004502": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527004502": "IN_STOCK",
       "7312446001033": "IN_STOCK",
       "7312446000432": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000979": "IN_STOCK",
@@ -6243,6 +6243,48 @@
   },
   "history": [
     {
+      "timestamp": "2026-10-08 08:54",
+      "strength": "50",
+      "name": "Kronans Apotek Hällefors",
+      "city": "Hällefors",
+      "region": "Örebro"
+    },
+    {
+      "timestamp": "2026-10-08 08:54",
+      "strength": "50",
+      "name": "DOZ Apotek Örebro Almby",
+      "city": "Örebro",
+      "region": "Örebro"
+    },
+    {
+      "timestamp": "2026-10-08 08:54",
+      "strength": "50",
+      "name": "Kronans Apotek Örebro Svampen",
+      "city": "Örebro",
+      "region": "Örebro"
+    },
+    {
+      "timestamp": "2026-10-08 08:54",
+      "strength": "50",
+      "name": "Kronans Apotek Västerås Stenby",
+      "city": "Västerås",
+      "region": "Västmanland"
+    },
+    {
+      "timestamp": "2026-10-08 08:54",
+      "strength": "25",
+      "name": "Apoteket Svanen",
+      "city": "Göteborg",
+      "region": "Västra Götaland"
+    },
+    {
+      "timestamp": "2026-10-08 08:54",
+      "strength": "25",
+      "name": "Apoteket Falken",
+      "city": "Stockholm",
+      "region": "Stockholm"
+    },
+    {
       "timestamp": "2026-10-07 16:24",
       "strength": "50",
       "name": "Kronans Apotek Malung",
@@ -6899,49 +6941,7 @@
       "name": "Vällingby Ormen Väl-bygången",
       "city": "Vällingby",
       "region": "Stockholm"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Hässelby Hässelbytorg 22",
-      "city": "Hässelby",
-      "region": "Stockholm"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Bromma Nockebytorg 2-4",
-      "city": "Bromma",
-      "region": "Stockholm"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Bromma Blackebergs Centrum",
-      "city": "Bromma",
-      "region": "Stockholm"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Hägersten Västertorps Centrum",
-      "city": "Hägersten",
-      "region": "Stockholm"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Fruängen Centrum",
-      "city": "Hägersten",
-      "region": "Stockholm"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Huddinge Centrum",
-      "city": "Huddinge",
-      "region": "Stockholm"
     }
   ],
-  "last_run": "2026-10-07 16:24"
+  "last_run": "2026-10-08 08:54"
 }
