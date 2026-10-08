@@ -27,7 +27,7 @@
       "7312446004454": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002955": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002566": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276016457": "FEW_IN_STOCK",
+      "7313276016457": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002740": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051480508": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276018390": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -36,7 +36,7 @@
       "7312666086018": "NO_SERVICE",
       "7312527003604": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446004638": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527001358": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527001358": "FEW_IN_STOCK",
       "7350051480201": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276012510": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051481567": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -1171,7 +1171,7 @@
       "7312527003482": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003389": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276007875": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527003178": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527003178": "FEW_IN_STOCK",
       "7350051481291": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004922": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276002559": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -1199,7 +1199,7 @@
       "7312527000900": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276000685": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276019274": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527002980": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527002980": "FEW_IN_STOCK",
       "7312446003549": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004045": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000661": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2132,7 +2132,7 @@
       "7312446004690": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276006670": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446001040": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527002119": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527002119": "FEW_IN_STOCK",
       "7312446004904": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276017348": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002238": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2504,10 +2504,10 @@
       "7312446002290": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276002894": "IN_STOCK",
       "7312527003024": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7350051481499": "FEW_IN_STOCK",
+      "7350051481499": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276002917": "IN_STOCK",
       "7313276016495": "IN_STOCK",
-      "7313276002856": "IN_STOCK",
+      "7313276002856": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276009480": "IN_STOCK",
       "7350174790003": "NO_SERVICE",
       "7312527000054": "IN_STOCK",
@@ -2525,7 +2525,7 @@
       "7312446002566": "IN_STOCK",
       "7313276016457": "IN_STOCK",
       "7312446002740": "IN_STOCK",
-      "7350051480508": "FEW_IN_STOCK",
+      "7350051480508": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276018390": "IN_STOCK",
       "7313276017102": "IN_STOCK",
       "7312527000153": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2800,8 +2800,8 @@
       "7312446000913": "IN_STOCK",
       "7313276004416": "IN_STOCK",
       "7312527003055": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312666271018": "FEW_IN_STOCK",
-      "7350051481345": "IN_STOCK",
+      "7312666271018": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7350051481345": "FEW_IN_STOCK",
       "7300009082841": "NO_SERVICE",
       "7312527004489": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527005332": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3032,7 +3032,7 @@
       "7312446004973": "IN_STOCK",
       "7350166350000": "NO_SERVICE",
       "7313276002542": "IN_STOCK",
-      "7312527000733": "IN_STOCK",
+      "7312527000733": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276002443": "IN_STOCK",
       "7313276009718": "IN_STOCK",
       "7313276012442": "IN_STOCK",
@@ -3454,7 +3454,7 @@
       "7313276005185": "IN_STOCK",
       "7312446004744": "IN_STOCK",
       "7313276012824": "IN_STOCK",
-      "7312527000948": "IN_STOCK",
+      "7312527000948": "FEW_IN_STOCK",
       "7312446002962": "IN_STOCK",
       "7312666233016": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276004751": "IN_STOCK",
@@ -3481,7 +3481,7 @@
       "7313276004034": "IN_STOCK",
       "7312446001699": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276004126": "IN_STOCK",
-      "7312527001549": "FEW_IN_STOCK",
+      "7312527001549": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276003969": "IN_STOCK",
       "7312527004427": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004410": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3667,7 +3667,7 @@
       "7312527003482": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003389": "IN_STOCK",
       "7313276007875": "IN_STOCK",
-      "7312527003178": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527003178": "FEW_IN_STOCK",
       "7350051481291": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004922": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276002559": "IN_STOCK",
@@ -6243,6 +6243,41 @@
   },
   "history": [
     {
+      "timestamp": "2026-10-08 16:26",
+      "strength": "50",
+      "name": "Kronans Apotek Billdal",
+      "city": "Billdal",
+      "region": "Västra Götaland"
+    },
+    {
+      "timestamp": "2026-10-08 16:26",
+      "strength": "37.5",
+      "name": "Kronans Apotek Torsby",
+      "city": "Torsby",
+      "region": "Värmland"
+    },
+    {
+      "timestamp": "2026-10-08 16:26",
+      "strength": "25",
+      "name": "Kronans Apotek Gustavsberg",
+      "city": "Nyköping",
+      "region": "Södermanland"
+    },
+    {
+      "timestamp": "2026-10-08 16:26",
+      "strength": "25",
+      "name": "Kronans Apotek Billdal",
+      "city": "Billdal",
+      "region": "Västra Götaland"
+    },
+    {
+      "timestamp": "2026-10-08 16:26",
+      "strength": "25",
+      "name": "Kronans Apotek Renstiernas g.",
+      "city": "Stockholm",
+      "region": "Stockholm"
+    },
+    {
       "timestamp": "2026-10-08 08:54",
       "strength": "50",
       "name": "Kronans Apotek Hällefors",
@@ -6906,42 +6941,7 @@
       "name": "Torup Nissastigen",
       "city": "Torup",
       "region": "Halland"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "ICA Maxi Högskolan Halmstad",
-      "city": "Halmstad",
-      "region": "Halland"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Halmstad Nyhemstorg",
-      "city": "Halmstad",
-      "region": "Halland"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Halmstad Brogatan",
-      "city": "Halmstad",
-      "region": "Halland"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Vällingby Vällingbytorg",
-      "city": "Vällingby",
-      "region": "Stockholm"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Vällingby Ormen Väl-bygången",
-      "city": "Vällingby",
-      "region": "Stockholm"
     }
   ],
-  "last_run": "2026-10-08 08:54"
+  "last_run": "2026-10-08 16:26"
 }
