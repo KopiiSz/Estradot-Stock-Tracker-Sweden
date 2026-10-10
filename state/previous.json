@@ -953,7 +953,7 @@
       "7312527001747": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7300009032105": "NO_SERVICE",
       "7312446002016": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276017546": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276017546": "FEW_IN_STOCK",
       "7312527001693": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276005185": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446004744": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -1024,7 +1024,7 @@
       "7312446000975": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002689": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527005318": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276000982": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276000982": "FEW_IN_STOCK",
       "7312446000388": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276019427": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276000975": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2561,7 +2561,7 @@
       "7313276016969": "IN_STOCK",
       "7312446002702": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276012596": "IN_STOCK",
-      "7312527000351": "FEW_IN_STOCK",
+      "7312527000351": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276013838": "IN_STOCK",
       "7350051480478": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002320": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2576,7 +2576,7 @@
       "7312666263013": "IN_STOCK",
       "7312527000047": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002577": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312446002429": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312446002429": "IN_STOCK",
       "7350051480294": "IN_STOCK",
       "7312666050019": "IN_STOCK",
       "7312446003204": "IN_STOCK",
@@ -2917,7 +2917,7 @@
       "7313276002375": "IN_STOCK",
       "7312446003259": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051480218": "FEW_IN_STOCK",
-      "7313276002351": "IN_STOCK",
+      "7313276002351": "FEW_IN_STOCK",
       "7312446002306": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276002252": "IN_STOCK",
       "7312527002935": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3032,7 +3032,7 @@
       "7312446004973": "IN_STOCK",
       "7350166350000": "NO_SERVICE",
       "7313276002542": "IN_STOCK",
-      "7312527000733": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527000733": "FEW_IN_STOCK",
       "7313276002443": "IN_STOCK",
       "7313276009718": "IN_STOCK",
       "7313276012442": "IN_STOCK",
@@ -3650,7 +3650,7 @@
       "7312527004533": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276017812": "IN_STOCK",
       "7312666218013": "IN_STOCK",
-      "7313276016938": "IN_STOCK",
+      "7313276016938": "FEW_IN_STOCK",
       "7312527004526": "FEW_IN_STOCK",
       "7312527005134": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051480492": "IN_STOCK",
@@ -3853,7 +3853,7 @@
       "7312527003307": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276017553": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003310": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312666043011": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312666043011": "CONTACT_STORE",
       "7312446004706": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002485": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002443": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6243,6 +6243,34 @@
   },
   "history": [
     {
+      "timestamp": "2026-10-10 18:32",
+      "strength": "50",
+      "name": "Kronans Apotek Södra Sandby",
+      "city": "Södra Sandby",
+      "region": "Skåne"
+    },
+    {
+      "timestamp": "2026-10-10 18:32",
+      "strength": "50",
+      "name": "Göteborg Linnégatan 62",
+      "city": "Göteborg",
+      "region": "Västra Götaland"
+    },
+    {
+      "timestamp": "2026-10-10 18:32",
+      "strength": "25",
+      "name": "Apoteket Tranan",
+      "city": "Skövde",
+      "region": "Jönköping"
+    },
+    {
+      "timestamp": "2026-10-10 18:32",
+      "strength": "25",
+      "name": "Apoteket Stenungstorg Stenungsund",
+      "city": "Stenungsund",
+      "region": "Västra Götaland"
+    },
+    {
       "timestamp": "2026-10-09 08:58",
       "strength": "25",
       "name": "Apoteket Falken",
@@ -6913,35 +6941,7 @@
       "name": "Rottne",
       "city": "Rottne",
       "region": "Kronoberg"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "ICA Supermarket Mörners",
-      "city": "Växjö",
-      "region": "Kronoberg"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Växjö Tegnérgallerian",
-      "city": "Växjö",
-      "region": "Kronoberg"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Ljungby ICA",
-      "city": "Ljungby",
-      "region": "Kronoberg"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Ljungby lasarett",
-      "city": "Ljungby",
-      "region": "Kronoberg"
     }
   ],
-  "last_run": "2026-10-09 20:52"
+  "last_run": "2026-10-10 18:32"
 }
