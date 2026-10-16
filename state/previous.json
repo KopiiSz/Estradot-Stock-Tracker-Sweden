@@ -1302,7 +1302,7 @@
       "7350051481574": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446004119": "FAILED",
       "7312666100011": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276016556": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276016556": "FEW_IN_STOCK",
       "7312527003642": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276001613": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276017492": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2557,7 +2557,7 @@
       "7312666287019": "IN_STOCK",
       "7312446002979": "FAILED",
       "7312527002393": "IN_STOCK",
-      "7313276008681": "IN_STOCK",
+      "7313276008681": "FEW_IN_STOCK",
       "7313276016969": "IN_STOCK",
       "7312446002702": "FAILED",
       "7313276012596": "IN_STOCK",
@@ -2883,7 +2883,7 @@
       "7313276007325": "IN_STOCK",
       "7313276007233": "IN_STOCK",
       "7313276000531": "IN_STOCK",
-      "7312527002157": "IN_STOCK",
+      "7312527002157": "FEW_IN_STOCK",
       "7312446004058": "FAILED",
       "7312446003501": "FAILED",
       "7312527004847": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3012,7 +3012,7 @@
       "7313276012787": "IN_STOCK",
       "7312527001129": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276001521": "IN_STOCK",
-      "7312527001143": "IN_STOCK",
+      "7312527001143": "FEW_IN_STOCK",
       "7312527003710": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003815": "FAILED",
       "7313276001453": "IN_STOCK",
@@ -3097,7 +3097,7 @@
       "7312446001538": "FAILED",
       "7313276017744": "IN_STOCK",
       "7312527005325": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527000788": "FEW_IN_STOCK",
+      "7312527000788": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276000111": "IN_STOCK",
       "7312446003778": "FAILED",
       "7312527003932": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3509,7 +3509,7 @@
       "7312527004397": "IN_STOCK",
       "7312446004430": "FAILED",
       "7312446000999": "FAILED",
-      "7312527004441": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527004441": "FEW_IN_STOCK",
       "7313276004256": "IN_STOCK",
       "7312446000845": "FAILED",
       "7313276003853": "IN_STOCK",
@@ -3637,7 +3637,7 @@
       "7313276006304": "IN_STOCK",
       "7313276006311": "IN_STOCK",
       "7312527002058": "IN_STOCK",
-      "7312527004724": "FEW_IN_STOCK",
+      "7312527004724": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002423": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527003857": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002065": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6243,6 +6243,20 @@
   },
   "history": [
     {
+      "timestamp": "2026-10-16 12:22",
+      "strength": "50",
+      "name": "Kronans Apotek Norberg",
+      "city": "Norberg",
+      "region": "Dalarna"
+    },
+    {
+      "timestamp": "2026-10-16 12:22",
+      "strength": "37.5",
+      "name": "Apoteket Biet",
+      "city": "Stockholm",
+      "region": "Stockholm"
+    },
+    {
       "timestamp": "2026-10-15 22:13",
       "strength": "50",
       "name": "DOZ Apotek Insjön Hjultorget",
@@ -6927,21 +6941,7 @@
       "name": "Lidköping Sjukhuset",
       "city": "Lidköping",
       "region": "Värmland"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Lidköping Guldvingens VC",
-      "city": "Lidköping",
-      "region": "Värmland"
-    },
-    {
-      "timestamp": "2026-10-07 08:35",
-      "strength": "50",
-      "name": "Skövde Elins Esplanad",
-      "city": "Skövde",
-      "region": "Jönköping"
     }
   ],
-  "last_run": "2026-10-15 22:13"
+  "last_run": "2026-10-16 12:22"
 }
