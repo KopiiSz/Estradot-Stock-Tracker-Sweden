@@ -1,17 +1,9 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5146,
+    "count": 5414,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
-    "example_city": "Stockholm",
-    "example_strength": "25"
-  },
-  "'STALE_DATA'": {
-    "raw_value": "STALE_DATA",
-    "count": 290,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "DOZ Apotek Stockholm Centralstation",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
@@ -25,7 +17,7 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 568,
+    "count": 573,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Carlanderska Sjukhuset",
     "example_city": "Göteborg",
@@ -33,7 +25,7 @@
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 29,
+    "count": 36,
     "classified_as_in_stock": true,
     "example_pharmacy": "Apoteket Linden",
     "example_city": "Bollebygd",
@@ -46,5 +38,21 @@
     "example_pharmacy": "Kronans Apotek Stora Höga",
     "example_city": "Stora Höga",
     "example_strength": "25"
+  },
+  "'TIMEOUT'": {
+    "raw_value": "TIMEOUT",
+    "count": 9,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Uppsala Gottsunda Centrum",
+    "example_city": "Uppsala",
+    "example_strength": "100"
+  },
+  "'FAILED'": {
+    "raw_value": "FAILED",
+    "count": 1,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Linköping Tanneforsgatan 11",
+    "example_city": "Linköping",
+    "example_strength": "100"
   }
 }
