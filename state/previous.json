@@ -2849,7 +2849,7 @@
       "7312527004007": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446002160": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276000500": "IN_STOCK",
-      "7312446004218": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312446004218": "IN_STOCK",
       "7309861022682": "NO_SERVICE",
       "7312446004010": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000623": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2937,7 +2937,7 @@
       "7350051481772": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446004171": "IN_STOCK",
       "7312527003161": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312446003747": "IN_STOCK",
+      "7312446003747": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276003044": "IN_STOCK",
       "7350051481147": "IN_STOCK",
       "7313276003136": "IN_STOCK",
@@ -3072,7 +3072,7 @@
       "7313276016204": "IN_STOCK",
       "7312446003570": "IN_STOCK",
       "7312446001804": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276009022": "IN_STOCK",
+      "7313276009022": "FEW_IN_STOCK",
       "7312446003587": "IN_STOCK",
       "7312446001545": "IN_STOCK",
       "7313276005765": "IN_STOCK",
@@ -3084,7 +3084,7 @@
       "7313276001125": "IN_STOCK",
       "7312446001484": "IN_STOCK",
       "7312446001767": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527001921": "FEW_IN_STOCK",
+      "7312527001921": "IN_STOCK",
       "7313276005819": "IN_STOCK",
       "7312446001576": "IN_STOCK",
       "7312527003185": "IN_STOCK",
@@ -6243,6 +6243,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-10-18 18:04",
+      "strength": "50",
+      "name": "Linköping Universitetssjukhuset NORRA",
+      "city": "Linköping",
+      "region": "Östergötland"
+    },
+    {
       "timestamp": "2026-10-18 10:59",
       "strength": "25",
       "name": "Kronans Apotek Halmstad Hallarna",
@@ -6934,14 +6941,7 @@
       "name": "Apotek Hjärtat ICA Maxi Brynäs, Gävle",
       "city": "Gävle",
       "region": "Gävleborg"
-    },
-    {
-      "timestamp": "2026-10-17 04:20",
-      "strength": "50",
-      "name": "Kramfors Kungsgatan 5A",
-      "city": "Kramfors",
-      "region": "Västernorrland"
     }
   ],
-  "last_run": "2026-10-18 14:32"
+  "last_run": "2026-10-18 18:04"
 }
