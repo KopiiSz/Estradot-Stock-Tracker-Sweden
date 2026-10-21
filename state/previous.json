@@ -2497,7 +2497,7 @@
       "7312527001501": "NOT_IN_STOCK_SHORTAGE_INFO"
     },
     "50": {
-      "7313276002924": "IN_STOCK",
+      "7313276002924": "FEW_IN_STOCK",
       "7313276009169": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276002931": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527003673": "IN_STOCK",
@@ -2612,7 +2612,7 @@
       "7312446002719": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276007530": "IN_STOCK",
       "7312527000344": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527002492": "IN_STOCK",
+      "7312527002492": "FEW_IN_STOCK",
       "7312527000368": "IN_STOCK",
       "7312446004669": "IN_STOCK",
       "7313276016525": "IN_STOCK",
@@ -3637,7 +3637,7 @@
       "7313276006304": "IN_STOCK",
       "7313276006311": "IN_STOCK",
       "7312527002058": "IN_STOCK",
-      "7312527004724": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527004724": "FEW_IN_STOCK",
       "7312527002423": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527003857": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002065": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3655,7 +3655,7 @@
       "7312527005134": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051480492": "IN_STOCK",
       "7312527005219": "IN_STOCK",
-      "7312527004953": "FEW_IN_STOCK",
+      "7312527004953": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276007745": "IN_STOCK",
       "7313276007882": "IN_STOCK",
       "7312527003338": "IN_STOCK",
@@ -6243,6 +6243,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-10-21 10:05",
+      "strength": "50",
+      "name": "Kronans Apotek Jokkmokk",
+      "city": "Jokkmokk",
+      "region": "Norrbotten"
+    },
+    {
       "timestamp": "2026-10-20 16:59",
       "strength": "50",
       "name": "Kronans Apotek Oxelösund",
@@ -6934,14 +6941,7 @@
       "name": "Apotek Hjärtat ICA Supermarket Tappström, Ekerö",
       "city": "Ekerö",
       "region": "Stockholm"
-    },
-    {
-      "timestamp": "2026-10-17 04:20",
-      "strength": "50",
-      "name": "Apotek Hjärtat ICA MAXI Södertälje",
-      "city": "Södertälje",
-      "region": "Stockholm"
     }
   ],
-  "last_run": "2026-10-21 04:40"
+  "last_run": "2026-10-21 10:05"
 }
