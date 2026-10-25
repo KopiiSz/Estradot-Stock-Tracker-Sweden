@@ -2543,7 +2543,7 @@
       "7313276018529": "IN_STOCK",
       "7312527004151": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446004102": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312446001330": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312446001330": "IN_STOCK",
       "7312446002559": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000085": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446001279": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2697,7 +2697,7 @@
       "7312527005172": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446001927": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446001637": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527001419": "IN_STOCK",
+      "7312527001419": "FEW_IN_STOCK",
       "7312527003598": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051481055": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527003499": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3725,7 +3725,7 @@
       "7312666091012": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002140": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276016471": "IN_STOCK",
-      "7312446003860": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312446003860": "IN_STOCK",
       "7312446004133": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276007189": "IN_STOCK",
       "7312446003648": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6243,6 +6243,20 @@
   },
   "history": [
     {
+      "timestamp": "2026-10-25 19:03",
+      "strength": "50",
+      "name": "Apotek Hjärtat ICA Kvantum Svedala",
+      "city": "Svedala",
+      "region": "Skåne"
+    },
+    {
+      "timestamp": "2026-10-25 19:03",
+      "strength": "50",
+      "name": "Stockholm Skanstull",
+      "city": "Stockholm",
+      "region": "Stockholm"
+    },
+    {
       "timestamp": "2026-10-25 11:19",
       "strength": "37.5",
       "name": "Kronans Apotek Umeå Ersboda",
@@ -6927,21 +6941,7 @@
       "name": "Nybro Storgatan 6",
       "city": "Nybro",
       "region": "Kalmar"
-    },
-    {
-      "timestamp": "2026-10-17 04:20",
-      "strength": "50",
-      "name": "Vetlanda ICA",
-      "city": "Vetlanda",
-      "region": "Kronoberg"
-    },
-    {
-      "timestamp": "2026-10-17 04:20",
-      "strength": "50",
-      "name": "Ryd",
-      "city": "Ryd",
-      "region": "Kronoberg"
     }
   ],
-  "last_run": "2026-10-25 11:19"
+  "last_run": "2026-10-25 19:03"
 }
