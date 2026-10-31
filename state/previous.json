@@ -3546,7 +3546,7 @@
       "7350051480027": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276001927": "IN_STOCK",
       "7313276016907": "IN_STOCK",
-      "7312527004205": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527004205": "IN_STOCK",
       "7313276001965": "IN_STOCK",
       "7312446000791": "IN_STOCK",
       "7313276001903": "FEW_IN_STOCK",
@@ -6243,6 +6243,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-10-31 05:33",
+      "strength": "50",
+      "name": "Kronans Apotek Ölands Köpstad",
+      "city": "Färjestaden",
+      "region": "Kalmar"
+    },
+    {
       "timestamp": "2026-10-30 19:18",
       "strength": "50",
       "name": "Kronans Apotek Åre",
@@ -6934,14 +6941,7 @@
       "name": "Kalmar ICA Maxi",
       "city": "Kalmar",
       "region": "Kalmar"
-    },
-    {
-      "timestamp": "2026-10-17 04:20",
-      "strength": "50",
-      "name": "Kalmar Sjukhuset Huvudentren",
-      "city": "Kalmar",
-      "region": "Kalmar"
     }
   ],
-  "last_run": "2026-10-30 23:43"
+  "last_run": "2026-10-31 05:33"
 }
