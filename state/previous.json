@@ -2484,7 +2484,7 @@
       "7312527004816": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000634": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000395": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276006779": "FEW_IN_STOCK",
+      "7313276006779": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000289": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276017805": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002362": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2752,9 +2752,9 @@
       "7300009072811": "NO_SERVICE",
       "7312527000276": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276009008": "IN_STOCK",
-      "7312446003723": "IN_STOCK",
+      "7312446003723": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276018567": "IN_STOCK",
-      "7312446003716": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312446003716": "IN_STOCK",
       "7312527002270": "IN_STOCK",
       "7312446002351": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002812": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3421,7 +3421,7 @@
       "7312446001569": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276005109": "IN_STOCK",
       "7300009028214": "NO_SERVICE",
-      "7350051481758": "IN_STOCK",
+      "7350051481758": "FEW_IN_STOCK",
       "7312446004805": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000511": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003655": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3528,7 +3528,7 @@
       "7313276000869": "IN_STOCK",
       "7312527060010": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004076": "IN_STOCK",
-      "7350051481420": "IN_STOCK",
+      "7350051481420": "FEW_IN_STOCK",
       "7312446000371": "IN_STOCK",
       "7312527001006": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527000931": "IN_STOCK",
@@ -6238,6 +6238,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-11-01 15:03",
+      "strength": "50",
+      "name": "Västerås Erikslund ICA Maxi",
+      "city": "Västerås",
+      "region": "Västmanland"
+    },
+    {
       "timestamp": "2026-10-31 17:41",
       "strength": "50",
       "name": "Apotek Hjärtat ICA Maxi Flygstaden Halmstad",
@@ -6929,14 +6936,7 @@
       "name": "Ronneby ICA Maxi",
       "city": "Ronneby",
       "region": "Blekinge"
-    },
-    {
-      "timestamp": "2026-10-17 04:20",
-      "strength": "50",
-      "name": "Ljungbyholm",
-      "city": "Ljungbyholm",
-      "region": "Kalmar"
     }
   ],
-  "last_run": "2026-11-01 07:29"
+  "last_run": "2026-11-01 15:03"
 }
