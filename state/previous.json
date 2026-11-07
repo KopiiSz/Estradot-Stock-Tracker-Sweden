@@ -1840,7 +1840,7 @@
       "7312527001921": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276005819": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446001576": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527003185": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527003185": "FEW_IN_STOCK",
       "7312446001521": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276005796": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004656": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -6243,6 +6243,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-11-07 09:59",
+      "strength": "37.5",
+      "name": "Kronans Apotek Kramfors",
+      "city": "Kramfors",
+      "region": "Västernorrland"
+    },
+    {
       "timestamp": "2026-11-06 17:27",
       "strength": "50",
       "name": "Kronans Apotek Slite",
@@ -6934,14 +6941,7 @@
       "name": "Luleå Skurholmen",
       "city": "Luleå",
       "region": "Norrbotten"
-    },
-    {
-      "timestamp": "2026-10-17 04:20",
-      "strength": "50",
-      "name": "Luleå ICA Maxi",
-      "city": "Luleå",
-      "region": "Norrbotten"
     }
   ],
-  "last_run": "2026-11-06 23:04"
+  "last_run": "2026-11-07 09:59"
 }
