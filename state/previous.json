@@ -902,7 +902,7 @@
       "7312527001952": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527003208": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276005666": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527001976": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7312527001976": "FEW_IN_STOCK",
       "7313276005604": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276005840": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003280": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -948,7 +948,7 @@
       "7313276000913": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527003062": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446004553": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7312527000528": "FEW_IN_STOCK",
+      "7312527000528": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276004652": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000456": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312666233023": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2572,7 +2572,7 @@
       "7312446000319": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527004878": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276007400": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276009756": "IN_STOCK",
+      "7313276009756": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312666263013": "IN_STOCK",
       "7312527000047": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002577": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -2956,7 +2956,7 @@
       "7312446000227": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276008162": "IN_STOCK",
       "7350051481321": "IN_STOCK",
-      "7313276012794": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276012794": "FEW_IN_STOCK",
       "7309861016872": "NO_SERVICE",
       "7300009083015": "NO_SERVICE",
       "7312527001075": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3429,7 +3429,7 @@
       "7312527000511": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446003655": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312527002614": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276012497": "FEW_IN_STOCK",
+      "7313276012497": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7333127000008": "NO_SERVICE",
       "7313276005086": "IN_STOCK",
       "7313276005123": "IN_STOCK",
@@ -6243,6 +6243,20 @@
   },
   "history": [
     {
+      "timestamp": "2026-11-08 15:08",
+      "strength": "50",
+      "name": "Apoteket Flygstaden Eslöv",
+      "city": "Eslöv",
+      "region": "Skåne"
+    },
+    {
+      "timestamp": "2026-11-08 15:08",
+      "strength": "25",
+      "name": "Kronans Apotek Kvissleby",
+      "city": "Kvissleby",
+      "region": "Västernorrland"
+    },
+    {
       "timestamp": "2026-11-08 07:15",
       "strength": "50",
       "name": "Vänersborg ICA Kvantum",
@@ -6927,21 +6941,7 @@
       "name": "Nyköping Pål Jungs Hage",
       "city": "Nyköping",
       "region": "Södermanland"
-    },
-    {
-      "timestamp": "2026-10-17 04:20",
-      "strength": "50",
-      "name": "Vimmerby Norrtullsgatan 5",
-      "city": "Vimmerby",
-      "region": "Östergötland"
-    },
-    {
-      "timestamp": "2026-10-17 04:20",
-      "strength": "50",
-      "name": "Apotek Hjärtat ICA Maxi Visby",
-      "city": "Visby",
-      "region": "Gotland"
     }
   ],
-  "last_run": "2026-11-08 07:15"
+  "last_run": "2026-11-08 15:08"
 }
