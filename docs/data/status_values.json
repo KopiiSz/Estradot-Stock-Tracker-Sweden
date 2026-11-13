@@ -1,17 +1,9 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5650,
+    "count": 5656,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
-    "example_city": "Stockholm",
-    "example_strength": "25"
-  },
-  "'FEW_IN_STOCK'": {
-    "raw_value": "FEW_IN_STOCK",
-    "count": 32,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Apoteket PK-huset",
     "example_city": "Stockholm",
     "example_strength": "25"
   },
@@ -23,20 +15,36 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
+  "'CONTACT_STORE'": {
+    "raw_value": "CONTACT_STORE",
+    "count": 3,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Kronans Apotek Carlanderska Sjukhuset",
+    "example_city": "Göteborg",
+    "example_strength": "25"
+  },
+  "'TIMEOUT'": {
+    "raw_value": "TIMEOUT",
+    "count": 1,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Apotek Hjärtat Galleria Mirum plan 2 Hagebygatan",
+    "example_city": "Norrköping",
+    "example_strength": "25"
+  },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 341,
+    "count": 334,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kungens Kurva",
     "example_city": "Kungens Kurva",
     "example_strength": "25"
   },
-  "'CONTACT_STORE'": {
-    "raw_value": "CONTACT_STORE",
-    "count": 2,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Kronans Apotek Hjärup",
-    "example_city": "HJÄRUP",
-    "example_strength": "50"
+  "'FEW_IN_STOCK'": {
+    "raw_value": "FEW_IN_STOCK",
+    "count": 31,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "Kronans Apotek Kvissleby",
+    "example_city": "Kvissleby",
+    "example_strength": "25"
   }
 }
