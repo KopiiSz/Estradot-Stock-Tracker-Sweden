@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5670,
+    "count": 5671,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
@@ -17,7 +17,7 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 313,
+    "count": 311,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kungens Kurva",
     "example_city": "Kungens Kurva",
@@ -33,7 +33,7 @@
   },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 39,
+    "count": 40,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Kvissleby",
     "example_city": "Kvissleby",
