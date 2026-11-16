@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5671,
+    "count": 5672,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
@@ -17,26 +17,26 @@
   },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 311,
+    "count": 309,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kungens Kurva",
     "example_city": "Kungens Kurva",
     "example_strength": "25"
   },
-  "'CONTACT_STORE'": {
-    "raw_value": "CONTACT_STORE",
-    "count": 3,
-    "classified_as_in_stock": false,
-    "example_pharmacy": "Kronans Apotek Strömmavägen",
-    "example_city": "Karlshamn",
-    "example_strength": "25"
-  },
   "'FEW_IN_STOCK'": {
     "raw_value": "FEW_IN_STOCK",
-    "count": 40,
+    "count": 42,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kronans Apotek Kvissleby",
     "example_city": "Kvissleby",
     "example_strength": "25"
+  },
+  "'CONTACT_STORE'": {
+    "raw_value": "CONTACT_STORE",
+    "count": 2,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Kronans Apotek Hjärup",
+    "example_city": "HJÄRUP",
+    "example_strength": "50"
   }
 }
