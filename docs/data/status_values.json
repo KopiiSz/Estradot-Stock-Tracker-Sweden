@@ -1,7 +1,7 @@
 {
   "'NOT_IN_STOCK_SHORTAGE_INFO'": {
     "raw_value": "NOT_IN_STOCK_SHORTAGE_INFO",
-    "count": 5672,
+    "count": 5661,
     "classified_as_in_stock": false,
     "example_pharmacy": "Apoteket Korpen",
     "example_city": "Stockholm",
@@ -15,20 +15,28 @@
     "example_city": "Stockholm",
     "example_strength": "25"
   },
+  "'FEW_IN_STOCK'": {
+    "raw_value": "FEW_IN_STOCK",
+    "count": 41,
+    "classified_as_in_stock": true,
+    "example_pharmacy": "DOZ Apotek Stockholm St Eriksplan",
+    "example_city": "Stockholm",
+    "example_strength": "25"
+  },
+  "'NOT_ON_MARKET'": {
+    "raw_value": "NOT_ON_MARKET",
+    "count": 29,
+    "classified_as_in_stock": false,
+    "example_pharmacy": "Kronans Apotek Sthlm Gärdet",
+    "example_city": "Stockholm",
+    "example_strength": "25"
+  },
   "'IN_STOCK'": {
     "raw_value": "IN_STOCK",
-    "count": 309,
+    "count": 292,
     "classified_as_in_stock": true,
     "example_pharmacy": "Kungens Kurva",
     "example_city": "Kungens Kurva",
-    "example_strength": "25"
-  },
-  "'FEW_IN_STOCK'": {
-    "raw_value": "FEW_IN_STOCK",
-    "count": 42,
-    "classified_as_in_stock": true,
-    "example_pharmacy": "Kronans Apotek Kvissleby",
-    "example_city": "Kvissleby",
     "example_strength": "25"
   },
   "'CONTACT_STORE'": {
