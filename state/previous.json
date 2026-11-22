@@ -2792,7 +2792,7 @@
       "7312446000951": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276004423": "IN_STOCK",
       "7312446000852": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276017355": "IN_STOCK",
+      "7313276017355": "FEW_IN_STOCK",
       "7313276012619": "IN_STOCK",
       "7312527000283": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446000913": "NOT_IN_STOCK_SHORTAGE_INFO",
@@ -3228,7 +3228,7 @@
       "7313276009190": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7350051481611": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7312446004300": "NOT_IN_STOCK_SHORTAGE_INFO",
-      "7313276009770": "NOT_IN_STOCK_SHORTAGE_INFO",
+      "7313276009770": "FEW_IN_STOCK",
       "7312446003037": "NOT_IN_STOCK_SHORTAGE_INFO",
       "7313276006489": "IN_STOCK",
       "7300009031290": "IN_STOCK",
@@ -6238,6 +6238,13 @@
   },
   "history": [
     {
+      "timestamp": "2026-11-22 11:16",
+      "strength": "50",
+      "name": "Apoteket Kungens kurva",
+      "city": "Kungens kurva",
+      "region": "Stockholm"
+    },
+    {
       "timestamp": "2026-11-21 09:42",
       "strength": "25",
       "name": "Apoteket Kungsmässan",
@@ -6929,14 +6936,7 @@
       "name": "Apoteket Korsvägen",
       "city": "Göteborg",
       "region": "Västra Götaland"
-    },
-    {
-      "timestamp": "2026-11-19 21:27",
-      "strength": "25",
-      "name": "Apoteket Centralen",
-      "city": "Göteborg",
-      "region": "Västra Götaland"
     }
   ],
-  "last_run": "2026-11-21 23:09"
+  "last_run": "2026-11-22 11:16"
 }
